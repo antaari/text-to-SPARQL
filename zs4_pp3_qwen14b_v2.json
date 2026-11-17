@@ -1,0 +1,1886 @@
+[
+  {
+    "id": 1,
+    "question_index": 0,
+    "model": "qwen2.5-coder:14b",
+    "backend": "ollama",
+    "result": "```sparql\nSELECT (COUNT(?singer) AS ?number_of_singers)\nWHERE {\n  ?singer rdf:type :singer .\n}\n```",
+    "execution_result": {
+      "cleaned_query": "SELECT (COUNT(?singer) AS ?number_of_singers)\nWHERE {\n  ?singer rdf:type :singer .\n}",
+      "resolved_query": "PREFIX : <http://valuenet/ontop/>\nPREFIX doap: <http://usefulinc.com/ns/doap#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX void: <http://rdfs.org/ns/void#>\nPREFIX brick: <https://brickschema.org/schema/Brick#>\nPREFIX csvw: <http://www.w3.org/ns/csvw#>\nPREFIX dc: <http://purl.org/dc/elements/1.1/>\nPREFIX dcam: <http://purl.org/dc/dcam/>\nPREFIX dcat: <http://www.w3.org/ns/dcat#>\nPREFIX dcmitype: <http://purl.org/dc/dcmitype/>\nPREFIX dcterms: <http://purl.org/dc/terms/>\nPREFIX foaf: <http://xmlns.com/foaf/0.1/>\nPREFIX odrl: <http://www.w3.org/ns/odrl/2/>\nPREFIX org: <http://www.w3.org/ns/org#>\nPREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX prof: <http://www.w3.org/ns/dx/prof/>\nPREFIX prov: <http://www.w3.org/ns/prov#>\nPREFIX qb: <http://purl.org/linked-data/cube#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX schema: <https://schema.org/>\nPREFIX sh: <http://www.w3.org/ns/shacl#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX sosa: <http://www.w3.org/ns/sosa/>\nPREFIX ssn: <http://www.w3.org/ns/ssn/>\nPREFIX time: <http://www.w3.org/2006/time#>\nPREFIX vann: <http://purl.org/vocab/vann/>\nPREFIX wgs: <https://www.w3.org/2003/01/geo/wgs84_pos#>\nPREFIX xml: <http://www.w3.org/XML/1998/namespace>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n\nSELECT (COUNT(?singer) AS ?number_of_singers)\nWHERE {\n  ?singer rdf:type :singer .\n}",
+      "full_graph_file": "spider4sparql/concert_singer.ttl",
+      "execution_success": true,
+      "results": [
+        [
+          "6"
+        ]
+      ],
+      "gold_result": [
+        [
+          "6"
+        ]
+      ],
+      "error": null
+    },
+    "comment": "",
+    "processing_time": 338.75
+  },
+  {
+    "id": 2,
+    "question_index": 1,
+    "model": "qwen2.5-coder:14b",
+    "backend": "ollama",
+    "result": "```sparql\nSELECT (COUNT(?singer) AS ?total_singers)\nWHERE {\n  ?singer rdf:type :singer .\n}\n```",
+    "execution_result": {
+      "cleaned_query": "SELECT (COUNT(?singer) AS ?total_singers)\nWHERE {\n  ?singer rdf:type :singer .\n}",
+      "resolved_query": "PREFIX : <http://valuenet/ontop/>\nPREFIX doap: <http://usefulinc.com/ns/doap#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX void: <http://rdfs.org/ns/void#>\nPREFIX brick: <https://brickschema.org/schema/Brick#>\nPREFIX csvw: <http://www.w3.org/ns/csvw#>\nPREFIX dc: <http://purl.org/dc/elements/1.1/>\nPREFIX dcam: <http://purl.org/dc/dcam/>\nPREFIX dcat: <http://www.w3.org/ns/dcat#>\nPREFIX dcmitype: <http://purl.org/dc/dcmitype/>\nPREFIX dcterms: <http://purl.org/dc/terms/>\nPREFIX foaf: <http://xmlns.com/foaf/0.1/>\nPREFIX odrl: <http://www.w3.org/ns/odrl/2/>\nPREFIX org: <http://www.w3.org/ns/org#>\nPREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX prof: <http://www.w3.org/ns/dx/prof/>\nPREFIX prov: <http://www.w3.org/ns/prov#>\nPREFIX qb: <http://purl.org/linked-data/cube#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX schema: <https://schema.org/>\nPREFIX sh: <http://www.w3.org/ns/shacl#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX sosa: <http://www.w3.org/ns/sosa/>\nPREFIX ssn: <http://www.w3.org/ns/ssn/>\nPREFIX time: <http://www.w3.org/2006/time#>\nPREFIX vann: <http://purl.org/vocab/vann/>\nPREFIX wgs: <https://www.w3.org/2003/01/geo/wgs84_pos#>\nPREFIX xml: <http://www.w3.org/XML/1998/namespace>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n\nSELECT (COUNT(?singer) AS ?total_singers)\nWHERE {\n  ?singer rdf:type :singer .\n}",
+      "full_graph_file": "spider4sparql/concert_singer.ttl",
+      "execution_success": true,
+      "results": [
+        [
+          "6"
+        ]
+      ],
+      "gold_result": [
+        [
+          "6"
+        ]
+      ],
+      "error": null
+    },
+    "comment": "",
+    "processing_time": 34.85
+  },
+  {
+    "id": 3,
+    "question_index": 2,
+    "model": "qwen2.5-coder:14b",
+    "backend": "ollama",
+    "result": "```sparql\nSELECT ?name ?country ?age\nWHERE {\n  ?singer rdf:type :singer .\n  ?singer :singer\\#name ?name .\n  ?singer :singer\\#country ?country .\n  ?singer :singer\\#age ?age .\n}\nORDER BY DESC(?age)\n```",
+    "execution_result": {
+      "cleaned_query": "SELECT ?name ?country ?age\nWHERE {\n  ?singer rdf:type :singer .\n  ?singer :singer\\#name ?name .\n  ?singer :singer\\#country ?country .\n  ?singer :singer\\#age ?age .\n}\nORDER BY DESC(?age)",
+      "resolved_query": "PREFIX : <http://valuenet/ontop/>\nPREFIX doap: <http://usefulinc.com/ns/doap#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX void: <http://rdfs.org/ns/void#>\nPREFIX brick: <https://brickschema.org/schema/Brick#>\nPREFIX csvw: <http://www.w3.org/ns/csvw#>\nPREFIX dc: <http://purl.org/dc/elements/1.1/>\nPREFIX dcam: <http://purl.org/dc/dcam/>\nPREFIX dcat: <http://www.w3.org/ns/dcat#>\nPREFIX dcmitype: <http://purl.org/dc/dcmitype/>\nPREFIX dcterms: <http://purl.org/dc/terms/>\nPREFIX foaf: <http://xmlns.com/foaf/0.1/>\nPREFIX odrl: <http://www.w3.org/ns/odrl/2/>\nPREFIX org: <http://www.w3.org/ns/org#>\nPREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX prof: <http://www.w3.org/ns/dx/prof/>\nPREFIX prov: <http://www.w3.org/ns/prov#>\nPREFIX qb: <http://purl.org/linked-data/cube#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX schema: <https://schema.org/>\nPREFIX sh: <http://www.w3.org/ns/shacl#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX sosa: <http://www.w3.org/ns/sosa/>\nPREFIX ssn: <http://www.w3.org/ns/ssn/>\nPREFIX time: <http://www.w3.org/2006/time#>\nPREFIX vann: <http://purl.org/vocab/vann/>\nPREFIX wgs: <https://www.w3.org/2003/01/geo/wgs84_pos#>\nPREFIX xml: <http://www.w3.org/XML/1998/namespace>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n\nSELECT ?name ?country ?age\nWHERE {\n  ?singer rdf:type :singer .\n  ?singer :singer\\#name ?name .\n  ?singer :singer\\#country ?country .\n  ?singer :singer\\#age ?age .\n}\nORDER BY DESC(?age)",
+      "full_graph_file": "spider4sparql/concert_singer.ttl",
+      "execution_success": true,
+      "results": [
+        [
+          "Joe Sharp",
+          "Netherlands",
+          "52"
+        ],
+        [
+          "John Nizinik",
+          "France",
+          "43"
+        ],
+        [
+          "Rose White",
+          "France",
+          "41"
+        ],
+        [
+          "Timbaland",
+          "United States",
+          "32"
+        ],
+        [
+          "Justin Brown",
+          "France",
+          "29"
+        ],
+        [
+          "Tribal King",
+          "France",
+          "25"
+        ]
+      ],
+      "gold_result": [
+        [
+          "Joe Sharp",
+          "Netherlands",
+          "52"
+        ],
+        [
+          "John Nizinik",
+          "France",
+          "43"
+        ],
+        [
+          "Rose White",
+          "France",
+          "41"
+        ],
+        [
+          "Timbaland",
+          "United States",
+          "32"
+        ],
+        [
+          "Justin Brown",
+          "France",
+          "29"
+        ],
+        [
+          "Tribal King",
+          "France",
+          "25"
+        ]
+      ],
+      "error": null
+    },
+    "comment": "",
+    "processing_time": 38.42
+  },
+  {
+    "id": 4,
+    "question_index": 3,
+    "model": "qwen2.5-coder:14b",
+    "backend": "ollama",
+    "result": "```sparql\nSELECT ?name ?country ?age\nWHERE {\n  ?singer rdf:type :singer .\n  ?singer :singer\\#name ?name .\n  ?singer :singer\\#country ?country .\n  ?singer :singer\\#age ?age .\n}\nORDER BY DESC(?age)\n```",
+    "execution_result": {
+      "cleaned_query": "SELECT ?name ?country ?age\nWHERE {\n  ?singer rdf:type :singer .\n  ?singer :singer\\#name ?name .\n  ?singer :singer\\#country ?country .\n  ?singer :singer\\#age ?age .\n}\nORDER BY DESC(?age)",
+      "resolved_query": "PREFIX : <http://valuenet/ontop/>\nPREFIX doap: <http://usefulinc.com/ns/doap#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX void: <http://rdfs.org/ns/void#>\nPREFIX brick: <https://brickschema.org/schema/Brick#>\nPREFIX csvw: <http://www.w3.org/ns/csvw#>\nPREFIX dc: <http://purl.org/dc/elements/1.1/>\nPREFIX dcam: <http://purl.org/dc/dcam/>\nPREFIX dcat: <http://www.w3.org/ns/dcat#>\nPREFIX dcmitype: <http://purl.org/dc/dcmitype/>\nPREFIX dcterms: <http://purl.org/dc/terms/>\nPREFIX foaf: <http://xmlns.com/foaf/0.1/>\nPREFIX odrl: <http://www.w3.org/ns/odrl/2/>\nPREFIX org: <http://www.w3.org/ns/org#>\nPREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX prof: <http://www.w3.org/ns/dx/prof/>\nPREFIX prov: <http://www.w3.org/ns/prov#>\nPREFIX qb: <http://purl.org/linked-data/cube#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX schema: <https://schema.org/>\nPREFIX sh: <http://www.w3.org/ns/shacl#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX sosa: <http://www.w3.org/ns/sosa/>\nPREFIX ssn: <http://www.w3.org/ns/ssn/>\nPREFIX time: <http://www.w3.org/2006/time#>\nPREFIX vann: <http://purl.org/vocab/vann/>\nPREFIX wgs: <https://www.w3.org/2003/01/geo/wgs84_pos#>\nPREFIX xml: <http://www.w3.org/XML/1998/namespace>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n\nSELECT ?name ?country ?age\nWHERE {\n  ?singer rdf:type :singer .\n  ?singer :singer\\#name ?name .\n  ?singer :singer\\#country ?country .\n  ?singer :singer\\#age ?age .\n}\nORDER BY DESC(?age)",
+      "full_graph_file": "spider4sparql/concert_singer.ttl",
+      "execution_success": true,
+      "results": [
+        [
+          "Joe Sharp",
+          "Netherlands",
+          "52"
+        ],
+        [
+          "John Nizinik",
+          "France",
+          "43"
+        ],
+        [
+          "Rose White",
+          "France",
+          "41"
+        ],
+        [
+          "Timbaland",
+          "United States",
+          "32"
+        ],
+        [
+          "Justin Brown",
+          "France",
+          "29"
+        ],
+        [
+          "Tribal King",
+          "France",
+          "25"
+        ]
+      ],
+      "gold_result": [
+        [
+          "Joe Sharp",
+          "Netherlands",
+          "52"
+        ],
+        [
+          "John Nizinik",
+          "France",
+          "43"
+        ],
+        [
+          "Rose White",
+          "France",
+          "41"
+        ],
+        [
+          "Timbaland",
+          "United States",
+          "32"
+        ],
+        [
+          "Justin Brown",
+          "France",
+          "29"
+        ],
+        [
+          "Tribal King",
+          "France",
+          "25"
+        ]
+      ],
+      "error": null
+    },
+    "comment": "",
+    "processing_time": 52.32
+  },
+  {
+    "id": 5,
+    "question_index": 4,
+    "model": "qwen2.5-coder:14b",
+    "backend": "ollama",
+    "result": "```sparql\nSELECT (AVG(?age) AS ?average_age) (MIN(?age) AS ?min_age) (MAX(?age) AS ?max_age)\nWHERE {\n  ?singer rdf:type :singer .\n  ?singer :singer\\#country \"France\" .\n  ?singer :singer\\#age ?age .\n}\n```",
+    "execution_result": {
+      "cleaned_query": "SELECT (AVG(?age) AS ?average_age) (MIN(?age) AS ?min_age) (MAX(?age) AS ?max_age)\nWHERE {\n  ?singer rdf:type :singer .\n  ?singer :singer\\#country \"France\" .\n  ?singer :singer\\#age ?age .\n}",
+      "resolved_query": "PREFIX : <http://valuenet/ontop/>\nPREFIX doap: <http://usefulinc.com/ns/doap#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX void: <http://rdfs.org/ns/void#>\nPREFIX brick: <https://brickschema.org/schema/Brick#>\nPREFIX csvw: <http://www.w3.org/ns/csvw#>\nPREFIX dc: <http://purl.org/dc/elements/1.1/>\nPREFIX dcam: <http://purl.org/dc/dcam/>\nPREFIX dcat: <http://www.w3.org/ns/dcat#>\nPREFIX dcmitype: <http://purl.org/dc/dcmitype/>\nPREFIX dcterms: <http://purl.org/dc/terms/>\nPREFIX foaf: <http://xmlns.com/foaf/0.1/>\nPREFIX odrl: <http://www.w3.org/ns/odrl/2/>\nPREFIX org: <http://www.w3.org/ns/org#>\nPREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX prof: <http://www.w3.org/ns/dx/prof/>\nPREFIX prov: <http://www.w3.org/ns/prov#>\nPREFIX qb: <http://purl.org/linked-data/cube#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX schema: <https://schema.org/>\nPREFIX sh: <http://www.w3.org/ns/shacl#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX sosa: <http://www.w3.org/ns/sosa/>\nPREFIX ssn: <http://www.w3.org/ns/ssn/>\nPREFIX time: <http://www.w3.org/2006/time#>\nPREFIX vann: <http://purl.org/vocab/vann/>\nPREFIX wgs: <https://www.w3.org/2003/01/geo/wgs84_pos#>\nPREFIX xml: <http://www.w3.org/XML/1998/namespace>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n\nSELECT (AVG(?age) AS ?average_age) (MIN(?age) AS ?min_age) (MAX(?age) AS ?max_age)\nWHERE {\n  ?singer rdf:type :singer .\n  ?singer :singer\\#country \"France\" .\n  ?singer :singer\\#age ?age .\n}",
+      "full_graph_file": "spider4sparql/concert_singer.ttl",
+      "execution_success": true,
+      "results": [
+        [
+          "34.5",
+          "25",
+          "43"
+        ]
+      ],
+      "gold_result": [
+        [
+          "34.5",
+          "25",
+          "43"
+        ]
+      ],
+      "error": null
+    },
+    "comment": "",
+    "processing_time": 275.33
+  },
+  {
+    "id": 6,
+    "question_index": 5,
+    "model": "qwen2.5-coder:14b",
+    "backend": "ollama",
+    "result": "```sparql\nSELECT (AVG(?age) AS ?average_age) (MIN(?age) AS ?min_age) (MAX(?age) AS ?max_age)\nWHERE {\n  ?singer rdf:type :singer .\n  ?singer :singer\\#country \"France\" .\n  ?singer :singer\\#age ?age .\n}\n```",
+    "execution_result": {
+      "cleaned_query": "SELECT (AVG(?age) AS ?average_age) (MIN(?age) AS ?min_age) (MAX(?age) AS ?max_age)\nWHERE {\n  ?singer rdf:type :singer .\n  ?singer :singer\\#country \"France\" .\n  ?singer :singer\\#age ?age .\n}",
+      "resolved_query": "PREFIX : <http://valuenet/ontop/>\nPREFIX doap: <http://usefulinc.com/ns/doap#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX void: <http://rdfs.org/ns/void#>\nPREFIX brick: <https://brickschema.org/schema/Brick#>\nPREFIX csvw: <http://www.w3.org/ns/csvw#>\nPREFIX dc: <http://purl.org/dc/elements/1.1/>\nPREFIX dcam: <http://purl.org/dc/dcam/>\nPREFIX dcat: <http://www.w3.org/ns/dcat#>\nPREFIX dcmitype: <http://purl.org/dc/dcmitype/>\nPREFIX dcterms: <http://purl.org/dc/terms/>\nPREFIX foaf: <http://xmlns.com/foaf/0.1/>\nPREFIX odrl: <http://www.w3.org/ns/odrl/2/>\nPREFIX org: <http://www.w3.org/ns/org#>\nPREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX prof: <http://www.w3.org/ns/dx/prof/>\nPREFIX prov: <http://www.w3.org/ns/prov#>\nPREFIX qb: <http://purl.org/linked-data/cube#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX schema: <https://schema.org/>\nPREFIX sh: <http://www.w3.org/ns/shacl#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX sosa: <http://www.w3.org/ns/sosa/>\nPREFIX ssn: <http://www.w3.org/ns/ssn/>\nPREFIX time: <http://www.w3.org/2006/time#>\nPREFIX vann: <http://purl.org/vocab/vann/>\nPREFIX wgs: <https://www.w3.org/2003/01/geo/wgs84_pos#>\nPREFIX xml: <http://www.w3.org/XML/1998/namespace>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n\nSELECT (AVG(?age) AS ?average_age) (MIN(?age) AS ?min_age) (MAX(?age) AS ?max_age)\nWHERE {\n  ?singer rdf:type :singer .\n  ?singer :singer\\#country \"France\" .\n  ?singer :singer\\#age ?age .\n}",
+      "full_graph_file": "spider4sparql/concert_singer.ttl",
+      "execution_success": true,
+      "results": [
+        [
+          "34.5",
+          "25",
+          "43"
+        ]
+      ],
+      "gold_result": [
+        [
+          "34.5",
+          "25",
+          "43"
+        ]
+      ],
+      "error": null
+    },
+    "comment": "",
+    "processing_time": 56.27
+  },
+  {
+    "id": 7,
+    "question_index": 6,
+    "model": "qwen2.5-coder:14b",
+    "backend": "ollama",
+    "result": "```sparql\nSELECT ?name ?song_release_year\nWHERE {\n  ?singer rdf:type :singer .\n  ?singer :singer\\#name ?name .\n  ?singer :singer\\#song_release_year ?song_release_year .\n  ?singer :singer\\#age ?age .\n  FILTER NOT EXISTS {\n    ?other_singer rdf:type :singer .\n    ?other_singer :singer\\#age ?other_age .\n    FILTER(?other_age < ?age)\n  }\n}\n```",
+    "execution_result": {
+      "cleaned_query": "SELECT ?name ?song_release_year\nWHERE {\n  ?singer rdf:type :singer .\n  ?singer :singer\\#name ?name .\n  ?singer :singer\\#song_release_year ?song_release_year .\n  ?singer :singer\\#age ?age .\n  FILTER NOT EXISTS {\n    ?other_singer rdf:type :singer .\n    ?other_singer :singer\\#age ?other_age .\n    FILTER(?other_age < ?age)\n  }\n}",
+      "resolved_query": "PREFIX : <http://valuenet/ontop/>\nPREFIX doap: <http://usefulinc.com/ns/doap#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX void: <http://rdfs.org/ns/void#>\nPREFIX brick: <https://brickschema.org/schema/Brick#>\nPREFIX csvw: <http://www.w3.org/ns/csvw#>\nPREFIX dc: <http://purl.org/dc/elements/1.1/>\nPREFIX dcam: <http://purl.org/dc/dcam/>\nPREFIX dcat: <http://www.w3.org/ns/dcat#>\nPREFIX dcmitype: <http://purl.org/dc/dcmitype/>\nPREFIX dcterms: <http://purl.org/dc/terms/>\nPREFIX foaf: <http://xmlns.com/foaf/0.1/>\nPREFIX odrl: <http://www.w3.org/ns/odrl/2/>\nPREFIX org: <http://www.w3.org/ns/org#>\nPREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX prof: <http://www.w3.org/ns/dx/prof/>\nPREFIX prov: <http://www.w3.org/ns/prov#>\nPREFIX qb: <http://purl.org/linked-data/cube#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX schema: <https://schema.org/>\nPREFIX sh: <http://www.w3.org/ns/shacl#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX sosa: <http://www.w3.org/ns/sosa/>\nPREFIX ssn: <http://www.w3.org/ns/ssn/>\nPREFIX time: <http://www.w3.org/2006/time#>\nPREFIX vann: <http://purl.org/vocab/vann/>\nPREFIX wgs: <https://www.w3.org/2003/01/geo/wgs84_pos#>\nPREFIX xml: <http://www.w3.org/XML/1998/namespace>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n\nSELECT ?name ?song_release_year\nWHERE {\n  ?singer rdf:type :singer .\n  ?singer :singer\\#name ?name .\n  ?singer :singer\\#song_release_year ?song_release_year .\n  ?singer :singer\\#age ?age .\n  FILTER NOT EXISTS {\n    ?other_singer rdf:type :singer .\n    ?other_singer :singer\\#age ?other_age .\n    FILTER(?other_age < ?age)\n  }\n}",
+      "full_graph_file": "spider4sparql/concert_singer.ttl",
+      "execution_success": true,
+      "results": [
+        [
+          "Tribal King",
+          "2016"
+        ]
+      ],
+      "gold_result": [
+        [
+          "Love",
+          "2016"
+        ]
+      ],
+      "error": null
+    },
+    "comment": "log",
+    "processing_time": 65.48
+  },
+  {
+    "id": 8,
+    "question_index": 7,
+    "model": "qwen2.5-coder:14b",
+    "backend": "ollama",
+    "result": "```sparql\nSELECT ?song_name ?song_release_year\nWHERE {\n  ?singer rdf:type :singer .\n  ?singer :singer\\#age ?age .\n  ?singer :singer\\#song_name ?song_name .\n  ?singer :singer\\#song_release_year ?song_release_year .\n  FILTER NOT EXISTS {\n    ?other_singer rdf:type :singer .\n    ?other_singer :singer\\#age ?other_age .\n    FILTER(?other_age < ?age)\n  }\n}\n```",
+    "execution_result": {
+      "cleaned_query": "SELECT ?song_name ?song_release_year\nWHERE {\n  ?singer rdf:type :singer .\n  ?singer :singer\\#age ?age .\n  ?singer :singer\\#song_name ?song_name .\n  ?singer :singer\\#song_release_year ?song_release_year .\n  FILTER NOT EXISTS {\n    ?other_singer rdf:type :singer .\n    ?other_singer :singer\\#age ?other_age .\n    FILTER(?other_age < ?age)\n  }\n}",
+      "resolved_query": "PREFIX : <http://valuenet/ontop/>\nPREFIX doap: <http://usefulinc.com/ns/doap#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX void: <http://rdfs.org/ns/void#>\nPREFIX brick: <https://brickschema.org/schema/Brick#>\nPREFIX csvw: <http://www.w3.org/ns/csvw#>\nPREFIX dc: <http://purl.org/dc/elements/1.1/>\nPREFIX dcam: <http://purl.org/dc/dcam/>\nPREFIX dcat: <http://www.w3.org/ns/dcat#>\nPREFIX dcmitype: <http://purl.org/dc/dcmitype/>\nPREFIX dcterms: <http://purl.org/dc/terms/>\nPREFIX foaf: <http://xmlns.com/foaf/0.1/>\nPREFIX odrl: <http://www.w3.org/ns/odrl/2/>\nPREFIX org: <http://www.w3.org/ns/org#>\nPREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX prof: <http://www.w3.org/ns/dx/prof/>\nPREFIX prov: <http://www.w3.org/ns/prov#>\nPREFIX qb: <http://purl.org/linked-data/cube#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX schema: <https://schema.org/>\nPREFIX sh: <http://www.w3.org/ns/shacl#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX sosa: <http://www.w3.org/ns/sosa/>\nPREFIX ssn: <http://www.w3.org/ns/ssn/>\nPREFIX time: <http://www.w3.org/2006/time#>\nPREFIX vann: <http://purl.org/vocab/vann/>\nPREFIX wgs: <https://www.w3.org/2003/01/geo/wgs84_pos#>\nPREFIX xml: <http://www.w3.org/XML/1998/namespace>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n\nSELECT ?song_name ?song_release_year\nWHERE {\n  ?singer rdf:type :singer .\n  ?singer :singer\\#age ?age .\n  ?singer :singer\\#song_name ?song_name .\n  ?singer :singer\\#song_release_year ?song_release_year .\n  FILTER NOT EXISTS {\n    ?other_singer rdf:type :singer .\n    ?other_singer :singer\\#age ?other_age .\n    FILTER(?other_age < ?age)\n  }\n}",
+      "full_graph_file": "spider4sparql/concert_singer.ttl",
+      "execution_success": true,
+      "results": [
+        [
+          "Love",
+          "2016"
+        ]
+      ],
+      "gold_result": [
+        [
+          "Love",
+          "2016"
+        ]
+      ],
+      "error": null
+    },
+    "comment": "",
+    "processing_time": 76.08
+  },
+  {
+    "id": 9,
+    "question_index": 8,
+    "model": "qwen2.5-coder:14b",
+    "backend": "ollama",
+    "result": "```sparql\nSELECT DISTINCT ?country\nWHERE {\n  ?singer rdf:type :singer .\n  ?singer :singer\\#age ?age .\n  ?singer :singer\\#country ?country .\n  FILTER(?age > 20)\n}\n```",
+    "execution_result": {
+      "cleaned_query": "SELECT DISTINCT ?country\nWHERE {\n  ?singer rdf:type :singer .\n  ?singer :singer\\#age ?age .\n  ?singer :singer\\#country ?country .\n  FILTER(?age > 20)\n}",
+      "resolved_query": "PREFIX : <http://valuenet/ontop/>\nPREFIX doap: <http://usefulinc.com/ns/doap#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX void: <http://rdfs.org/ns/void#>\nPREFIX brick: <https://brickschema.org/schema/Brick#>\nPREFIX csvw: <http://www.w3.org/ns/csvw#>\nPREFIX dc: <http://purl.org/dc/elements/1.1/>\nPREFIX dcam: <http://purl.org/dc/dcam/>\nPREFIX dcat: <http://www.w3.org/ns/dcat#>\nPREFIX dcmitype: <http://purl.org/dc/dcmitype/>\nPREFIX dcterms: <http://purl.org/dc/terms/>\nPREFIX foaf: <http://xmlns.com/foaf/0.1/>\nPREFIX odrl: <http://www.w3.org/ns/odrl/2/>\nPREFIX org: <http://www.w3.org/ns/org#>\nPREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX prof: <http://www.w3.org/ns/dx/prof/>\nPREFIX prov: <http://www.w3.org/ns/prov#>\nPREFIX qb: <http://purl.org/linked-data/cube#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX schema: <https://schema.org/>\nPREFIX sh: <http://www.w3.org/ns/shacl#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX sosa: <http://www.w3.org/ns/sosa/>\nPREFIX ssn: <http://www.w3.org/ns/ssn/>\nPREFIX time: <http://www.w3.org/2006/time#>\nPREFIX vann: <http://purl.org/vocab/vann/>\nPREFIX wgs: <https://www.w3.org/2003/01/geo/wgs84_pos#>\nPREFIX xml: <http://www.w3.org/XML/1998/namespace>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n\nSELECT DISTINCT ?country\nWHERE {\n  ?singer rdf:type :singer .\n  ?singer :singer\\#age ?age .\n  ?singer :singer\\#country ?country .\n  FILTER(?age > 20)\n}",
+      "full_graph_file": "spider4sparql/concert_singer.ttl",
+      "execution_success": true,
+      "results": [
+        [
+          "Netherlands"
+        ],
+        [
+          "United States"
+        ],
+        [
+          "France"
+        ]
+      ],
+      "gold_result": [
+        [
+          "Netherlands"
+        ],
+        [
+          "United States"
+        ],
+        [
+          "France"
+        ]
+      ],
+      "error": null
+    },
+    "comment": "",
+    "processing_time": 34.17
+  },
+  {
+    "id": 10,
+    "question_index": 9,
+    "model": "qwen2.5-coder:14b",
+    "backend": "ollama",
+    "result": "```sparql\nSELECT DISTINCT ?country\nWHERE {\n  ?singer rdf:type :singer .\n  ?singer :singer\\#age ?age .\n  ?singer :singer\\#country ?country .\n  FILTER(?age > 20)\n}\n```",
+    "execution_result": {
+      "cleaned_query": "SELECT DISTINCT ?country\nWHERE {\n  ?singer rdf:type :singer .\n  ?singer :singer\\#age ?age .\n  ?singer :singer\\#country ?country .\n  FILTER(?age > 20)\n}",
+      "resolved_query": "PREFIX : <http://valuenet/ontop/>\nPREFIX doap: <http://usefulinc.com/ns/doap#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX void: <http://rdfs.org/ns/void#>\nPREFIX brick: <https://brickschema.org/schema/Brick#>\nPREFIX csvw: <http://www.w3.org/ns/csvw#>\nPREFIX dc: <http://purl.org/dc/elements/1.1/>\nPREFIX dcam: <http://purl.org/dc/dcam/>\nPREFIX dcat: <http://www.w3.org/ns/dcat#>\nPREFIX dcmitype: <http://purl.org/dc/dcmitype/>\nPREFIX dcterms: <http://purl.org/dc/terms/>\nPREFIX foaf: <http://xmlns.com/foaf/0.1/>\nPREFIX odrl: <http://www.w3.org/ns/odrl/2/>\nPREFIX org: <http://www.w3.org/ns/org#>\nPREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX prof: <http://www.w3.org/ns/dx/prof/>\nPREFIX prov: <http://www.w3.org/ns/prov#>\nPREFIX qb: <http://purl.org/linked-data/cube#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX schema: <https://schema.org/>\nPREFIX sh: <http://www.w3.org/ns/shacl#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX sosa: <http://www.w3.org/ns/sosa/>\nPREFIX ssn: <http://www.w3.org/ns/ssn/>\nPREFIX time: <http://www.w3.org/2006/time#>\nPREFIX vann: <http://purl.org/vocab/vann/>\nPREFIX wgs: <https://www.w3.org/2003/01/geo/wgs84_pos#>\nPREFIX xml: <http://www.w3.org/XML/1998/namespace>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n\nSELECT DISTINCT ?country\nWHERE {\n  ?singer rdf:type :singer .\n  ?singer :singer\\#age ?age .\n  ?singer :singer\\#country ?country .\n  FILTER(?age > 20)\n}",
+      "full_graph_file": "spider4sparql/concert_singer.ttl",
+      "execution_success": true,
+      "results": [
+        [
+          "Netherlands"
+        ],
+        [
+          "United States"
+        ],
+        [
+          "France"
+        ]
+      ],
+      "gold_result": [
+        [
+          "Netherlands"
+        ],
+        [
+          "United States"
+        ],
+        [
+          "France"
+        ]
+      ],
+      "error": null
+    },
+    "comment": "",
+    "processing_time": 32.87
+  },
+  {
+    "id": 11,
+    "question_index": 10,
+    "model": "qwen2.5-coder:14b",
+    "backend": "ollama",
+    "result": "```sparql\nSELECT ?country (COUNT(?singer) AS ?number_of_singers)\nWHERE {\n  ?singer rdf:type :singer .\n  ?singer :singer\\#country ?country .\n}\nGROUP BY ?country\n```",
+    "execution_result": {
+      "cleaned_query": "SELECT ?country (COUNT(?singer) AS ?number_of_singers)\nWHERE {\n  ?singer rdf:type :singer .\n  ?singer :singer\\#country ?country .\n}\nGROUP BY ?country",
+      "resolved_query": "PREFIX : <http://valuenet/ontop/>\nPREFIX doap: <http://usefulinc.com/ns/doap#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX void: <http://rdfs.org/ns/void#>\nPREFIX brick: <https://brickschema.org/schema/Brick#>\nPREFIX csvw: <http://www.w3.org/ns/csvw#>\nPREFIX dc: <http://purl.org/dc/elements/1.1/>\nPREFIX dcam: <http://purl.org/dc/dcam/>\nPREFIX dcat: <http://www.w3.org/ns/dcat#>\nPREFIX dcmitype: <http://purl.org/dc/dcmitype/>\nPREFIX dcterms: <http://purl.org/dc/terms/>\nPREFIX foaf: <http://xmlns.com/foaf/0.1/>\nPREFIX odrl: <http://www.w3.org/ns/odrl/2/>\nPREFIX org: <http://www.w3.org/ns/org#>\nPREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX prof: <http://www.w3.org/ns/dx/prof/>\nPREFIX prov: <http://www.w3.org/ns/prov#>\nPREFIX qb: <http://purl.org/linked-data/cube#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX schema: <https://schema.org/>\nPREFIX sh: <http://www.w3.org/ns/shacl#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX sosa: <http://www.w3.org/ns/sosa/>\nPREFIX ssn: <http://www.w3.org/ns/ssn/>\nPREFIX time: <http://www.w3.org/2006/time#>\nPREFIX vann: <http://purl.org/vocab/vann/>\nPREFIX wgs: <https://www.w3.org/2003/01/geo/wgs84_pos#>\nPREFIX xml: <http://www.w3.org/XML/1998/namespace>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n\nSELECT ?country (COUNT(?singer) AS ?number_of_singers)\nWHERE {\n  ?singer rdf:type :singer .\n  ?singer :singer\\#country ?country .\n}\nGROUP BY ?country",
+      "full_graph_file": "spider4sparql/concert_singer.ttl",
+      "execution_success": true,
+      "results": [
+        [
+          "Netherlands",
+          "1"
+        ],
+        [
+          "United States",
+          "1"
+        ],
+        [
+          "France",
+          "4"
+        ]
+      ],
+      "gold_result": [
+        [
+          "Netherlands",
+          "1"
+        ],
+        [
+          "United States",
+          "1"
+        ],
+        [
+          "France",
+          "4"
+        ]
+      ],
+      "error": null
+    },
+    "comment": "",
+    "processing_time": 32.1
+  },
+  {
+    "id": 12,
+    "question_index": 11,
+    "model": "qwen2.5-coder:14b",
+    "backend": "ollama",
+    "result": "```sparql\nSELECT ?country (COUNT(?singer) AS ?count)\nWHERE {\n  ?singer rdf:type :singer .\n  ?singer :singer\\#country ?country .\n}\nGROUP BY ?country\n```",
+    "execution_result": {
+      "cleaned_query": "SELECT ?country (COUNT(?singer) AS ?count)\nWHERE {\n  ?singer rdf:type :singer .\n  ?singer :singer\\#country ?country .\n}\nGROUP BY ?country",
+      "resolved_query": "PREFIX : <http://valuenet/ontop/>\nPREFIX doap: <http://usefulinc.com/ns/doap#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX void: <http://rdfs.org/ns/void#>\nPREFIX brick: <https://brickschema.org/schema/Brick#>\nPREFIX csvw: <http://www.w3.org/ns/csvw#>\nPREFIX dc: <http://purl.org/dc/elements/1.1/>\nPREFIX dcam: <http://purl.org/dc/dcam/>\nPREFIX dcat: <http://www.w3.org/ns/dcat#>\nPREFIX dcmitype: <http://purl.org/dc/dcmitype/>\nPREFIX dcterms: <http://purl.org/dc/terms/>\nPREFIX foaf: <http://xmlns.com/foaf/0.1/>\nPREFIX odrl: <http://www.w3.org/ns/odrl/2/>\nPREFIX org: <http://www.w3.org/ns/org#>\nPREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX prof: <http://www.w3.org/ns/dx/prof/>\nPREFIX prov: <http://www.w3.org/ns/prov#>\nPREFIX qb: <http://purl.org/linked-data/cube#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX schema: <https://schema.org/>\nPREFIX sh: <http://www.w3.org/ns/shacl#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX sosa: <http://www.w3.org/ns/sosa/>\nPREFIX ssn: <http://www.w3.org/ns/ssn/>\nPREFIX time: <http://www.w3.org/2006/time#>\nPREFIX vann: <http://purl.org/vocab/vann/>\nPREFIX wgs: <https://www.w3.org/2003/01/geo/wgs84_pos#>\nPREFIX xml: <http://www.w3.org/XML/1998/namespace>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n\nSELECT ?country (COUNT(?singer) AS ?count)\nWHERE {\n  ?singer rdf:type :singer .\n  ?singer :singer\\#country ?country .\n}\nGROUP BY ?country",
+      "full_graph_file": "spider4sparql/concert_singer.ttl",
+      "execution_success": true,
+      "results": [
+        [
+          "Netherlands",
+          "1"
+        ],
+        [
+          "United States",
+          "1"
+        ],
+        [
+          "France",
+          "4"
+        ]
+      ],
+      "gold_result": [
+        [
+          "Netherlands",
+          "1"
+        ],
+        [
+          "United States",
+          "1"
+        ],
+        [
+          "France",
+          "4"
+        ]
+      ],
+      "error": null
+    },
+    "comment": "",
+    "processing_time": 31.39
+  },
+  {
+    "id": 13,
+    "question_index": 12,
+    "model": "qwen2.5-coder:14b",
+    "backend": "ollama",
+    "result": "```sparql\nSELECT ?song_name\nWHERE {\n  ?singer rdf:type :singer .\n  ?singer :singer\\#age ?age .\n  ?singer :singer\\#song_name ?song_name .\n  FILTER(?age > (SELECT AVG(?age) FROM { ?singer rdf:type :singer . ?singer :singer\\#age ?age . }))\n}\n```",
+    "execution_result": {
+      "cleaned_query": "SELECT ?song_name\nWHERE {\n  ?singer rdf:type :singer .\n  ?singer :singer\\#age ?age .\n  ?singer :singer\\#song_name ?song_name .\n  FILTER(?age > (SELECT AVG(?age) FROM { ?singer rdf:type :singer . ?singer :singer\\#age ?age . }))\n}",
+      "resolved_query": "PREFIX : <http://valuenet/ontop/>\nPREFIX doap: <http://usefulinc.com/ns/doap#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX void: <http://rdfs.org/ns/void#>\nPREFIX brick: <https://brickschema.org/schema/Brick#>\nPREFIX csvw: <http://www.w3.org/ns/csvw#>\nPREFIX dc: <http://purl.org/dc/elements/1.1/>\nPREFIX dcam: <http://purl.org/dc/dcam/>\nPREFIX dcat: <http://www.w3.org/ns/dcat#>\nPREFIX dcmitype: <http://purl.org/dc/dcmitype/>\nPREFIX dcterms: <http://purl.org/dc/terms/>\nPREFIX foaf: <http://xmlns.com/foaf/0.1/>\nPREFIX odrl: <http://www.w3.org/ns/odrl/2/>\nPREFIX org: <http://www.w3.org/ns/org#>\nPREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX prof: <http://www.w3.org/ns/dx/prof/>\nPREFIX prov: <http://www.w3.org/ns/prov#>\nPREFIX qb: <http://purl.org/linked-data/cube#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX schema: <https://schema.org/>\nPREFIX sh: <http://www.w3.org/ns/shacl#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX sosa: <http://www.w3.org/ns/sosa/>\nPREFIX ssn: <http://www.w3.org/ns/ssn/>\nPREFIX time: <http://www.w3.org/2006/time#>\nPREFIX vann: <http://purl.org/vocab/vann/>\nPREFIX wgs: <https://www.w3.org/2003/01/geo/wgs84_pos#>\nPREFIX xml: <http://www.w3.org/XML/1998/namespace>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n\nSELECT ?song_name\nWHERE {\n  ?singer rdf:type :singer .\n  ?singer :singer\\#age ?age .\n  ?singer :singer\\#song_name ?song_name .\n  FILTER(?age > (SELECT AVG(?age) FROM { ?singer rdf:type :singer . ?singer :singer\\#age ?age . }))\n}",
+      "full_graph_file": "spider4sparql/concert_singer.ttl",
+      "execution_success": false,
+      "results": [],
+      "gold_result": [
+        [
+          "You"
+        ],
+        [
+          "Sun"
+        ],
+        [
+          "Gentleman"
+        ]
+      ],
+      "error": "Expected SelectQuery, found 'FILTER'  (at char 1487), (line:37, col:3)"
+    },
+    "comment": "syn_subq, syn_sql, log_var",
+    "processing_time": 214.64
+  },
+  {
+    "id": 14,
+    "question_index": 13,
+    "model": "qwen2.5-coder:14b",
+    "backend": "ollama",
+    "result": "```sparql\nSELECT ?song_name\nWHERE {\n  ?singer rdf:type :singer .\n  ?singer :singer\\#age ?age .\n  FILTER(?age > (SELECT AVG(?age) FROM { ?singer rdf:type :singer . ?singer :singer\\#age ?age . }))\n  ?singer :singer\\#song_name ?song_name .\n}\n```",
+    "execution_result": {
+      "cleaned_query": "SELECT ?song_name\nWHERE {\n  ?singer rdf:type :singer .\n  ?singer :singer\\#age ?age .\n  FILTER(?age > (SELECT AVG(?age) FROM { ?singer rdf:type :singer . ?singer :singer\\#age ?age . }))\n  ?singer :singer\\#song_name ?song_name .\n}",
+      "resolved_query": "PREFIX : <http://valuenet/ontop/>\nPREFIX doap: <http://usefulinc.com/ns/doap#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX void: <http://rdfs.org/ns/void#>\nPREFIX brick: <https://brickschema.org/schema/Brick#>\nPREFIX csvw: <http://www.w3.org/ns/csvw#>\nPREFIX dc: <http://purl.org/dc/elements/1.1/>\nPREFIX dcam: <http://purl.org/dc/dcam/>\nPREFIX dcat: <http://www.w3.org/ns/dcat#>\nPREFIX dcmitype: <http://purl.org/dc/dcmitype/>\nPREFIX dcterms: <http://purl.org/dc/terms/>\nPREFIX foaf: <http://xmlns.com/foaf/0.1/>\nPREFIX odrl: <http://www.w3.org/ns/odrl/2/>\nPREFIX org: <http://www.w3.org/ns/org#>\nPREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX prof: <http://www.w3.org/ns/dx/prof/>\nPREFIX prov: <http://www.w3.org/ns/prov#>\nPREFIX qb: <http://purl.org/linked-data/cube#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX schema: <https://schema.org/>\nPREFIX sh: <http://www.w3.org/ns/shacl#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX sosa: <http://www.w3.org/ns/sosa/>\nPREFIX ssn: <http://www.w3.org/ns/ssn/>\nPREFIX time: <http://www.w3.org/2006/time#>\nPREFIX vann: <http://purl.org/vocab/vann/>\nPREFIX wgs: <https://www.w3.org/2003/01/geo/wgs84_pos#>\nPREFIX xml: <http://www.w3.org/XML/1998/namespace>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n\nSELECT ?song_name\nWHERE {\n  ?singer rdf:type :singer .\n  ?singer :singer\\#age ?age .\n  FILTER(?age > (SELECT AVG(?age) FROM { ?singer rdf:type :singer . ?singer :singer\\#age ?age . }))\n  ?singer :singer\\#song_name ?song_name .\n}",
+      "full_graph_file": "spider4sparql/concert_singer.ttl",
+      "execution_success": false,
+      "results": [],
+      "gold_result": [
+        [
+          "You"
+        ],
+        [
+          "Sun"
+        ],
+        [
+          "Gentleman"
+        ]
+      ],
+      "error": "Expected SelectQuery, found 'FILTER'  (at char 1445), (line:36, col:3)"
+    },
+    "comment": "syn_subq, syn_sql, log_var",
+    "processing_time": 57.11
+  },
+  {
+    "id": 15,
+    "question_index": 14,
+    "model": "qwen2.5-coder:14b",
+    "backend": "ollama",
+    "result": "```sparql\nSELECT ?name ?location\nWHERE {\n  ?stadium rdf:type :stadium ;\n           :stadium\\#capacity ?capacity ;\n           :stadium\\#name ?name ;\n           :stadium\\#location ?location .\n  FILTER(?capacity >= 5000 && ?capacity <= 10000)\n}\n```",
+    "execution_result": {
+      "cleaned_query": "SELECT ?name ?location\nWHERE {\n  ?stadium rdf:type :stadium ;\n           :stadium\\#capacity ?capacity ;\n           :stadium\\#name ?name ;\n           :stadium\\#location ?location .\n  FILTER(?capacity >= 5000 && ?capacity <= 10000)\n}",
+      "resolved_query": "PREFIX : <http://valuenet/ontop/>\nPREFIX doap: <http://usefulinc.com/ns/doap#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX void: <http://rdfs.org/ns/void#>\nPREFIX brick: <https://brickschema.org/schema/Brick#>\nPREFIX csvw: <http://www.w3.org/ns/csvw#>\nPREFIX dc: <http://purl.org/dc/elements/1.1/>\nPREFIX dcam: <http://purl.org/dc/dcam/>\nPREFIX dcat: <http://www.w3.org/ns/dcat#>\nPREFIX dcmitype: <http://purl.org/dc/dcmitype/>\nPREFIX dcterms: <http://purl.org/dc/terms/>\nPREFIX foaf: <http://xmlns.com/foaf/0.1/>\nPREFIX odrl: <http://www.w3.org/ns/odrl/2/>\nPREFIX org: <http://www.w3.org/ns/org#>\nPREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX prof: <http://www.w3.org/ns/dx/prof/>\nPREFIX prov: <http://www.w3.org/ns/prov#>\nPREFIX qb: <http://purl.org/linked-data/cube#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX schema: <https://schema.org/>\nPREFIX sh: <http://www.w3.org/ns/shacl#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX sosa: <http://www.w3.org/ns/sosa/>\nPREFIX ssn: <http://www.w3.org/ns/ssn/>\nPREFIX time: <http://www.w3.org/2006/time#>\nPREFIX vann: <http://purl.org/vocab/vann/>\nPREFIX wgs: <https://www.w3.org/2003/01/geo/wgs84_pos#>\nPREFIX xml: <http://www.w3.org/XML/1998/namespace>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n\nSELECT ?name ?location\nWHERE {\n  ?stadium rdf:type :stadium ;\n           :stadium\\#capacity ?capacity ;\n           :stadium\\#name ?name ;\n           :stadium\\#location ?location .\n  FILTER(?capacity >= 5000 && ?capacity <= 10000)\n}",
+      "full_graph_file": "spider4sparql/concert_singer.ttl",
+      "execution_success": true,
+      "results": [],
+      "gold_result": [],
+      "error": null
+    },
+    "comment": "",
+    "processing_time": 350.11
+  },
+  {
+    "id": 16,
+    "question_index": 15,
+    "model": "qwen2.5-coder:14b",
+    "backend": "ollama",
+    "result": "```sparql\nSELECT ?location ?name\nWHERE {\n  ?stadium rdf:type :stadium ;\n           :stadium\\#capacity ?capacity ;\n           :stadium\\#location ?location ;\n           :stadium\\#name ?name .\n  FILTER(?capacity >= 5000 && ?capacity <= 10000)\n}\n```",
+    "execution_result": {
+      "cleaned_query": "SELECT ?location ?name\nWHERE {\n  ?stadium rdf:type :stadium ;\n           :stadium\\#capacity ?capacity ;\n           :stadium\\#location ?location ;\n           :stadium\\#name ?name .\n  FILTER(?capacity >= 5000 && ?capacity <= 10000)\n}",
+      "resolved_query": "PREFIX : <http://valuenet/ontop/>\nPREFIX doap: <http://usefulinc.com/ns/doap#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX void: <http://rdfs.org/ns/void#>\nPREFIX brick: <https://brickschema.org/schema/Brick#>\nPREFIX csvw: <http://www.w3.org/ns/csvw#>\nPREFIX dc: <http://purl.org/dc/elements/1.1/>\nPREFIX dcam: <http://purl.org/dc/dcam/>\nPREFIX dcat: <http://www.w3.org/ns/dcat#>\nPREFIX dcmitype: <http://purl.org/dc/dcmitype/>\nPREFIX dcterms: <http://purl.org/dc/terms/>\nPREFIX foaf: <http://xmlns.com/foaf/0.1/>\nPREFIX odrl: <http://www.w3.org/ns/odrl/2/>\nPREFIX org: <http://www.w3.org/ns/org#>\nPREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX prof: <http://www.w3.org/ns/dx/prof/>\nPREFIX prov: <http://www.w3.org/ns/prov#>\nPREFIX qb: <http://purl.org/linked-data/cube#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX schema: <https://schema.org/>\nPREFIX sh: <http://www.w3.org/ns/shacl#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX sosa: <http://www.w3.org/ns/sosa/>\nPREFIX ssn: <http://www.w3.org/ns/ssn/>\nPREFIX time: <http://www.w3.org/2006/time#>\nPREFIX vann: <http://purl.org/vocab/vann/>\nPREFIX wgs: <https://www.w3.org/2003/01/geo/wgs84_pos#>\nPREFIX xml: <http://www.w3.org/XML/1998/namespace>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n\nSELECT ?location ?name\nWHERE {\n  ?stadium rdf:type :stadium ;\n           :stadium\\#capacity ?capacity ;\n           :stadium\\#location ?location ;\n           :stadium\\#name ?name .\n  FILTER(?capacity >= 5000 && ?capacity <= 10000)\n}",
+      "full_graph_file": "spider4sparql/concert_singer.ttl",
+      "execution_success": true,
+      "results": [],
+      "gold_result": [],
+      "error": null
+    },
+    "comment": "",
+    "processing_time": 260.22
+  },
+  {
+    "id": 17,
+    "question_index": 16,
+    "model": "qwen2.5-coder:14b",
+    "backend": "ollama",
+    "result": "```sparql\nSELECT (MAX(?capacity) AS ?max_capacity) (AVG(?average) AS ?avg_average)\nWHERE {\n  ?stadium rdf:type :stadium ;\n           :stadium\\#capacity ?capacity ;\n           :stadium\\#average ?average .\n}\n```",
+    "execution_result": {
+      "cleaned_query": "SELECT (MAX(?capacity) AS ?max_capacity) (AVG(?average) AS ?avg_average)\nWHERE {\n  ?stadium rdf:type :stadium ;\n           :stadium\\#capacity ?capacity ;\n           :stadium\\#average ?average .\n}",
+      "resolved_query": "PREFIX : <http://valuenet/ontop/>\nPREFIX doap: <http://usefulinc.com/ns/doap#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX void: <http://rdfs.org/ns/void#>\nPREFIX brick: <https://brickschema.org/schema/Brick#>\nPREFIX csvw: <http://www.w3.org/ns/csvw#>\nPREFIX dc: <http://purl.org/dc/elements/1.1/>\nPREFIX dcam: <http://purl.org/dc/dcam/>\nPREFIX dcat: <http://www.w3.org/ns/dcat#>\nPREFIX dcmitype: <http://purl.org/dc/dcmitype/>\nPREFIX dcterms: <http://purl.org/dc/terms/>\nPREFIX foaf: <http://xmlns.com/foaf/0.1/>\nPREFIX odrl: <http://www.w3.org/ns/odrl/2/>\nPREFIX org: <http://www.w3.org/ns/org#>\nPREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX prof: <http://www.w3.org/ns/dx/prof/>\nPREFIX prov: <http://www.w3.org/ns/prov#>\nPREFIX qb: <http://purl.org/linked-data/cube#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX schema: <https://schema.org/>\nPREFIX sh: <http://www.w3.org/ns/shacl#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX sosa: <http://www.w3.org/ns/sosa/>\nPREFIX ssn: <http://www.w3.org/ns/ssn/>\nPREFIX time: <http://www.w3.org/2006/time#>\nPREFIX vann: <http://purl.org/vocab/vann/>\nPREFIX wgs: <https://www.w3.org/2003/01/geo/wgs84_pos#>\nPREFIX xml: <http://www.w3.org/XML/1998/namespace>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n\nSELECT (MAX(?capacity) AS ?max_capacity) (AVG(?average) AS ?avg_average)\nWHERE {\n  ?stadium rdf:type :stadium ;\n           :stadium\\#capacity ?capacity ;\n           :stadium\\#average ?average .\n}",
+      "full_graph_file": "spider4sparql/concert_singer.ttl",
+      "execution_success": true,
+      "results": [
+        [
+          "52500",
+          "917.8888888888888888888888889"
+        ]
+      ],
+      "gold_result": [
+        [
+          "10104",
+          "2106"
+        ],
+        [
+          "11998",
+          "1477"
+        ],
+        [
+          "2000",
+          "864"
+        ],
+        [
+          "52500",
+          "730"
+        ],
+        [
+          "3808",
+          "642"
+        ],
+        [
+          "4125",
+          "638"
+        ],
+        [
+          "3100",
+          "637"
+        ],
+        [
+          "4000",
+          "615"
+        ],
+        [
+          "3960",
+          "552"
+        ]
+      ],
+      "error": null
+    },
+    "comment": "log",
+    "processing_time": 38.79
+  },
+  {
+    "id": 18,
+    "question_index": 17,
+    "model": "qwen2.5-coder:14b",
+    "backend": "ollama",
+    "result": "```sparql\nSELECT ?stadium_id ?average ?capacity\nWHERE {\n  ?stadium rdf:type :stadium ;\n           :stadium\\#stadium_id ?stadium_id ;\n           :stadium\\#average ?average ;\n           :stadium\\#capacity ?capacity .\n}\n```",
+    "execution_result": {
+      "cleaned_query": "SELECT ?stadium_id ?average ?capacity\nWHERE {\n  ?stadium rdf:type :stadium ;\n           :stadium\\#stadium_id ?stadium_id ;\n           :stadium\\#average ?average ;\n           :stadium\\#capacity ?capacity .\n}",
+      "resolved_query": "PREFIX : <http://valuenet/ontop/>\nPREFIX doap: <http://usefulinc.com/ns/doap#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX void: <http://rdfs.org/ns/void#>\nPREFIX brick: <https://brickschema.org/schema/Brick#>\nPREFIX csvw: <http://www.w3.org/ns/csvw#>\nPREFIX dc: <http://purl.org/dc/elements/1.1/>\nPREFIX dcam: <http://purl.org/dc/dcam/>\nPREFIX dcat: <http://www.w3.org/ns/dcat#>\nPREFIX dcmitype: <http://purl.org/dc/dcmitype/>\nPREFIX dcterms: <http://purl.org/dc/terms/>\nPREFIX foaf: <http://xmlns.com/foaf/0.1/>\nPREFIX odrl: <http://www.w3.org/ns/odrl/2/>\nPREFIX org: <http://www.w3.org/ns/org#>\nPREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX prof: <http://www.w3.org/ns/dx/prof/>\nPREFIX prov: <http://www.w3.org/ns/prov#>\nPREFIX qb: <http://purl.org/linked-data/cube#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX schema: <https://schema.org/>\nPREFIX sh: <http://www.w3.org/ns/shacl#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX sosa: <http://www.w3.org/ns/sosa/>\nPREFIX ssn: <http://www.w3.org/ns/ssn/>\nPREFIX time: <http://www.w3.org/2006/time#>\nPREFIX vann: <http://purl.org/vocab/vann/>\nPREFIX wgs: <https://www.w3.org/2003/01/geo/wgs84_pos#>\nPREFIX xml: <http://www.w3.org/XML/1998/namespace>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n\nSELECT ?stadium_id ?average ?capacity\nWHERE {\n  ?stadium rdf:type :stadium ;\n           :stadium\\#stadium_id ?stadium_id ;\n           :stadium\\#average ?average ;\n           :stadium\\#capacity ?capacity .\n}",
+      "full_graph_file": "spider4sparql/concert_singer.ttl",
+      "execution_success": true,
+      "results": [
+        [
+          "1",
+          "2106",
+          "10104"
+        ],
+        [
+          "2",
+          "1477",
+          "11998"
+        ],
+        [
+          "3",
+          "864",
+          "2000"
+        ],
+        [
+          "4",
+          "730",
+          "52500"
+        ],
+        [
+          "5",
+          "642",
+          "3808"
+        ],
+        [
+          "6",
+          "638",
+          "4125"
+        ],
+        [
+          "7",
+          "637",
+          "3100"
+        ],
+        [
+          "9",
+          "615",
+          "4000"
+        ],
+        [
+          "10",
+          "552",
+          "3960"
+        ]
+      ],
+      "gold_result": [
+        [
+          "10104",
+          "2106"
+        ],
+        [
+          "11998",
+          "1477"
+        ],
+        [
+          "2000",
+          "864"
+        ],
+        [
+          "52500",
+          "730"
+        ],
+        [
+          "3808",
+          "642"
+        ],
+        [
+          "4125",
+          "638"
+        ],
+        [
+          "3100",
+          "637"
+        ],
+        [
+          "4000",
+          "615"
+        ],
+        [
+          "3960",
+          "552"
+        ]
+      ],
+      "error": null
+    },
+    "comment": "giusta",
+    "processing_time": 35.54
+  },
+  {
+    "id": 19,
+    "question_index": 18,
+    "model": "qwen2.5-coder:14b",
+    "backend": "ollama",
+    "result": "```sparql\nSELECT ?name ?capacity\nWHERE {\n  ?stadium rdf:type :stadium ;\n           :stadium\\#average ?average ;\n           :stadium\\#name ?name ;\n           :stadium\\#capacity ?capacity .\n  FILTER NOT EXISTS {\n    ?otherStadium rdf:type :stadium ;\n                  :stadium\\#average ?otherAverage .\n    FILTER(?otherAverage > ?average)\n  }\n}\n```",
+    "execution_result": {
+      "cleaned_query": "SELECT ?name ?capacity\nWHERE {\n  ?stadium rdf:type :stadium ;\n           :stadium\\#average ?average ;\n           :stadium\\#name ?name ;\n           :stadium\\#capacity ?capacity .\n  FILTER NOT EXISTS {\n    ?otherStadium rdf:type :stadium ;\n                  :stadium\\#average ?otherAverage .\n    FILTER(?otherAverage > ?average)\n  }\n}",
+      "resolved_query": "PREFIX : <http://valuenet/ontop/>\nPREFIX doap: <http://usefulinc.com/ns/doap#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX void: <http://rdfs.org/ns/void#>\nPREFIX brick: <https://brickschema.org/schema/Brick#>\nPREFIX csvw: <http://www.w3.org/ns/csvw#>\nPREFIX dc: <http://purl.org/dc/elements/1.1/>\nPREFIX dcam: <http://purl.org/dc/dcam/>\nPREFIX dcat: <http://www.w3.org/ns/dcat#>\nPREFIX dcmitype: <http://purl.org/dc/dcmitype/>\nPREFIX dcterms: <http://purl.org/dc/terms/>\nPREFIX foaf: <http://xmlns.com/foaf/0.1/>\nPREFIX odrl: <http://www.w3.org/ns/odrl/2/>\nPREFIX org: <http://www.w3.org/ns/org#>\nPREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX prof: <http://www.w3.org/ns/dx/prof/>\nPREFIX prov: <http://www.w3.org/ns/prov#>\nPREFIX qb: <http://purl.org/linked-data/cube#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX schema: <https://schema.org/>\nPREFIX sh: <http://www.w3.org/ns/shacl#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX sosa: <http://www.w3.org/ns/sosa/>\nPREFIX ssn: <http://www.w3.org/ns/ssn/>\nPREFIX time: <http://www.w3.org/2006/time#>\nPREFIX vann: <http://purl.org/vocab/vann/>\nPREFIX wgs: <https://www.w3.org/2003/01/geo/wgs84_pos#>\nPREFIX xml: <http://www.w3.org/XML/1998/namespace>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n\nSELECT ?name ?capacity\nWHERE {\n  ?stadium rdf:type :stadium ;\n           :stadium\\#average ?average ;\n           :stadium\\#name ?name ;\n           :stadium\\#capacity ?capacity .\n  FILTER NOT EXISTS {\n    ?otherStadium rdf:type :stadium ;\n                  :stadium\\#average ?otherAverage .\n    FILTER(?otherAverage > ?average)\n  }\n}",
+      "full_graph_file": "spider4sparql/concert_singer.ttl",
+      "execution_success": true,
+      "results": [
+        [
+          "Stark's Park",
+          "10104"
+        ]
+      ],
+      "gold_result": [
+        [
+          "Stark's Park",
+          "10104"
+        ]
+      ],
+      "error": null
+    },
+    "comment": "",
+    "processing_time": 49.58
+  },
+  {
+    "id": 20,
+    "question_index": 19,
+    "model": "qwen2.5-coder:14b",
+    "backend": "ollama",
+    "result": "```sparql\nSELECT ?name ?capacity\nWHERE {\n  ?stadium rdf:type :stadium ;\n           :stadium\\#average ?average ;\n           :stadium\\#name ?name ;\n           :stadium\\#capacity ?capacity .\n  FILTER NOT EXISTS {\n    ?otherStadium rdf:type :stadium ;\n                  :stadium\\#average ?otherAverage .\n    FILTER(?otherAverage > ?average)\n  }\n}\n```",
+    "execution_result": {
+      "cleaned_query": "SELECT ?name ?capacity\nWHERE {\n  ?stadium rdf:type :stadium ;\n           :stadium\\#average ?average ;\n           :stadium\\#name ?name ;\n           :stadium\\#capacity ?capacity .\n  FILTER NOT EXISTS {\n    ?otherStadium rdf:type :stadium ;\n                  :stadium\\#average ?otherAverage .\n    FILTER(?otherAverage > ?average)\n  }\n}",
+      "resolved_query": "PREFIX : <http://valuenet/ontop/>\nPREFIX doap: <http://usefulinc.com/ns/doap#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX void: <http://rdfs.org/ns/void#>\nPREFIX brick: <https://brickschema.org/schema/Brick#>\nPREFIX csvw: <http://www.w3.org/ns/csvw#>\nPREFIX dc: <http://purl.org/dc/elements/1.1/>\nPREFIX dcam: <http://purl.org/dc/dcam/>\nPREFIX dcat: <http://www.w3.org/ns/dcat#>\nPREFIX dcmitype: <http://purl.org/dc/dcmitype/>\nPREFIX dcterms: <http://purl.org/dc/terms/>\nPREFIX foaf: <http://xmlns.com/foaf/0.1/>\nPREFIX odrl: <http://www.w3.org/ns/odrl/2/>\nPREFIX org: <http://www.w3.org/ns/org#>\nPREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX prof: <http://www.w3.org/ns/dx/prof/>\nPREFIX prov: <http://www.w3.org/ns/prov#>\nPREFIX qb: <http://purl.org/linked-data/cube#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX schema: <https://schema.org/>\nPREFIX sh: <http://www.w3.org/ns/shacl#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX sosa: <http://www.w3.org/ns/sosa/>\nPREFIX ssn: <http://www.w3.org/ns/ssn/>\nPREFIX time: <http://www.w3.org/2006/time#>\nPREFIX vann: <http://purl.org/vocab/vann/>\nPREFIX wgs: <https://www.w3.org/2003/01/geo/wgs84_pos#>\nPREFIX xml: <http://www.w3.org/XML/1998/namespace>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n\nSELECT ?name ?capacity\nWHERE {\n  ?stadium rdf:type :stadium ;\n           :stadium\\#average ?average ;\n           :stadium\\#name ?name ;\n           :stadium\\#capacity ?capacity .\n  FILTER NOT EXISTS {\n    ?otherStadium rdf:type :stadium ;\n                  :stadium\\#average ?otherAverage .\n    FILTER(?otherAverage > ?average)\n  }\n}",
+      "full_graph_file": "spider4sparql/concert_singer.ttl",
+      "execution_success": true,
+      "results": [
+        [
+          "Stark's Park",
+          "10104"
+        ]
+      ],
+      "gold_result": [
+        [
+          "Stark's Park",
+          "10104"
+        ]
+      ],
+      "error": null
+    },
+    "comment": "",
+    "processing_time": 52.75
+  },
+  {
+    "id": 21,
+    "question_index": 20,
+    "model": "qwen2.5-coder:14b",
+    "backend": "ollama",
+    "result": "```sparql\nSELECT (COUNT(?concert) AS ?number_of_concerts)\nWHERE {\n  ?concert rdf:type :concert ;\n           :concert\\#year ?year .\n  FILTER(?year = \"2014\" || ?year = \"2015\")\n}\n```",
+    "execution_result": {
+      "cleaned_query": "SELECT (COUNT(?concert) AS ?number_of_concerts)\nWHERE {\n  ?concert rdf:type :concert ;\n           :concert\\#year ?year .\n  FILTER(?year = \"2014\" || ?year = \"2015\")\n}",
+      "resolved_query": "PREFIX : <http://valuenet/ontop/>\nPREFIX doap: <http://usefulinc.com/ns/doap#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX void: <http://rdfs.org/ns/void#>\nPREFIX brick: <https://brickschema.org/schema/Brick#>\nPREFIX csvw: <http://www.w3.org/ns/csvw#>\nPREFIX dc: <http://purl.org/dc/elements/1.1/>\nPREFIX dcam: <http://purl.org/dc/dcam/>\nPREFIX dcat: <http://www.w3.org/ns/dcat#>\nPREFIX dcmitype: <http://purl.org/dc/dcmitype/>\nPREFIX dcterms: <http://purl.org/dc/terms/>\nPREFIX foaf: <http://xmlns.com/foaf/0.1/>\nPREFIX odrl: <http://www.w3.org/ns/odrl/2/>\nPREFIX org: <http://www.w3.org/ns/org#>\nPREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX prof: <http://www.w3.org/ns/dx/prof/>\nPREFIX prov: <http://www.w3.org/ns/prov#>\nPREFIX qb: <http://purl.org/linked-data/cube#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX schema: <https://schema.org/>\nPREFIX sh: <http://www.w3.org/ns/shacl#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX sosa: <http://www.w3.org/ns/sosa/>\nPREFIX ssn: <http://www.w3.org/ns/ssn/>\nPREFIX time: <http://www.w3.org/2006/time#>\nPREFIX vann: <http://purl.org/vocab/vann/>\nPREFIX wgs: <https://www.w3.org/2003/01/geo/wgs84_pos#>\nPREFIX xml: <http://www.w3.org/XML/1998/namespace>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n\nSELECT (COUNT(?concert) AS ?number_of_concerts)\nWHERE {\n  ?concert rdf:type :concert ;\n           :concert\\#year ?year .\n  FILTER(?year = \"2014\" || ?year = \"2015\")\n}",
+      "full_graph_file": "spider4sparql/concert_singer.ttl",
+      "execution_success": true,
+      "results": [
+        [
+          "6"
+        ]
+      ],
+      "gold_result": [
+        [
+          "6"
+        ]
+      ],
+      "error": null
+    },
+    "comment": "",
+    "processing_time": 149.65
+  },
+  {
+    "id": 22,
+    "question_index": 21,
+    "model": "qwen2.5-coder:14b",
+    "backend": "ollama",
+    "result": "```sparql\nSELECT (COUNT(?concert) AS ?number_of_concerts)\nWHERE {\n  ?concert rdf:type :concert ;\n           :concert\\#year ?year .\n  FILTER(?year = \"2014\" || ?year = \"2015\")\n}\n```",
+    "execution_result": {
+      "cleaned_query": "SELECT (COUNT(?concert) AS ?number_of_concerts)\nWHERE {\n  ?concert rdf:type :concert ;\n           :concert\\#year ?year .\n  FILTER(?year = \"2014\" || ?year = \"2015\")\n}",
+      "resolved_query": "PREFIX : <http://valuenet/ontop/>\nPREFIX doap: <http://usefulinc.com/ns/doap#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX void: <http://rdfs.org/ns/void#>\nPREFIX brick: <https://brickschema.org/schema/Brick#>\nPREFIX csvw: <http://www.w3.org/ns/csvw#>\nPREFIX dc: <http://purl.org/dc/elements/1.1/>\nPREFIX dcam: <http://purl.org/dc/dcam/>\nPREFIX dcat: <http://www.w3.org/ns/dcat#>\nPREFIX dcmitype: <http://purl.org/dc/dcmitype/>\nPREFIX dcterms: <http://purl.org/dc/terms/>\nPREFIX foaf: <http://xmlns.com/foaf/0.1/>\nPREFIX odrl: <http://www.w3.org/ns/odrl/2/>\nPREFIX org: <http://www.w3.org/ns/org#>\nPREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX prof: <http://www.w3.org/ns/dx/prof/>\nPREFIX prov: <http://www.w3.org/ns/prov#>\nPREFIX qb: <http://purl.org/linked-data/cube#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX schema: <https://schema.org/>\nPREFIX sh: <http://www.w3.org/ns/shacl#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX sosa: <http://www.w3.org/ns/sosa/>\nPREFIX ssn: <http://www.w3.org/ns/ssn/>\nPREFIX time: <http://www.w3.org/2006/time#>\nPREFIX vann: <http://purl.org/vocab/vann/>\nPREFIX wgs: <https://www.w3.org/2003/01/geo/wgs84_pos#>\nPREFIX xml: <http://www.w3.org/XML/1998/namespace>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n\nSELECT (COUNT(?concert) AS ?number_of_concerts)\nWHERE {\n  ?concert rdf:type :concert ;\n           :concert\\#year ?year .\n  FILTER(?year = \"2014\" || ?year = \"2015\")\n}",
+      "full_graph_file": "spider4sparql/concert_singer.ttl",
+      "execution_success": true,
+      "results": [
+        [
+          "6"
+        ]
+      ],
+      "gold_result": [
+        [
+          "6"
+        ]
+      ],
+      "error": null
+    },
+    "comment": "",
+    "processing_time": 40.78
+  },
+  {
+    "id": 23,
+    "question_index": 22,
+    "model": "qwen2.5-coder:14b",
+    "backend": "ollama",
+    "result": "```sparql\nSELECT ?stadium_name (COUNT(?concert) AS ?number_of_concerts)\nWHERE {\n  ?concert :concert\\#ref-stadium_id ?stadium .\n  ?stadium :stadium\\#name ?stadium_name .\n}\nGROUP BY ?stadium_name\n```",
+    "execution_result": {
+      "cleaned_query": "SELECT ?stadium_name (COUNT(?concert) AS ?number_of_concerts)\nWHERE {\n  ?concert :concert\\#ref-stadium_id ?stadium .\n  ?stadium :stadium\\#name ?stadium_name .\n}\nGROUP BY ?stadium_name",
+      "resolved_query": "PREFIX : <http://valuenet/ontop/>\nPREFIX doap: <http://usefulinc.com/ns/doap#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX void: <http://rdfs.org/ns/void#>\nPREFIX brick: <https://brickschema.org/schema/Brick#>\nPREFIX csvw: <http://www.w3.org/ns/csvw#>\nPREFIX dc: <http://purl.org/dc/elements/1.1/>\nPREFIX dcam: <http://purl.org/dc/dcam/>\nPREFIX dcat: <http://www.w3.org/ns/dcat#>\nPREFIX dcmitype: <http://purl.org/dc/dcmitype/>\nPREFIX dcterms: <http://purl.org/dc/terms/>\nPREFIX foaf: <http://xmlns.com/foaf/0.1/>\nPREFIX odrl: <http://www.w3.org/ns/odrl/2/>\nPREFIX org: <http://www.w3.org/ns/org#>\nPREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX prof: <http://www.w3.org/ns/dx/prof/>\nPREFIX prov: <http://www.w3.org/ns/prov#>\nPREFIX qb: <http://purl.org/linked-data/cube#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX schema: <https://schema.org/>\nPREFIX sh: <http://www.w3.org/ns/shacl#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX sosa: <http://www.w3.org/ns/sosa/>\nPREFIX ssn: <http://www.w3.org/ns/ssn/>\nPREFIX time: <http://www.w3.org/2006/time#>\nPREFIX vann: <http://purl.org/vocab/vann/>\nPREFIX wgs: <https://www.w3.org/2003/01/geo/wgs84_pos#>\nPREFIX xml: <http://www.w3.org/XML/1998/namespace>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n\nSELECT ?stadium_name (COUNT(?concert) AS ?number_of_concerts)\nWHERE {\n  ?concert :concert\\#ref-stadium_id ?stadium .\n  ?stadium :stadium\\#name ?stadium_name .\n}\nGROUP BY ?stadium_name",
+      "full_graph_file": "spider4sparql/concert_singer.ttl",
+      "execution_success": true,
+      "results": [
+        [
+          "Stark's Park",
+          "1"
+        ],
+        [
+          "Somerset Park",
+          "2"
+        ],
+        [
+          "Glebe Park",
+          "1"
+        ],
+        [
+          "Balmoor",
+          "1"
+        ],
+        [
+          "Recreation Park",
+          "1"
+        ]
+      ],
+      "gold_result": [
+        [
+          "Stark's Park",
+          "1"
+        ],
+        [
+          "Somerset Park",
+          "2"
+        ],
+        [
+          "Recreation Park",
+          "1"
+        ],
+        [
+          "Balmoor",
+          "1"
+        ],
+        [
+          "Glebe Park",
+          "1"
+        ]
+      ],
+      "error": null
+    },
+    "comment": "",
+    "processing_time": 215.06
+  },
+  {
+    "id": 24,
+    "question_index": 23,
+    "model": "qwen2.5-coder:14b",
+    "backend": "ollama",
+    "result": "```sparql\nSELECT ?stadium_name (COUNT(?concert) AS ?concert_count)\nWHERE {\n  ?stadium rdf:type :stadium .\n  ?stadium :stadium\\#name ?stadium_name .\n  OPTIONAL {\n    ?concert :concert\\#ref-stadium_id ?stadium .\n  }\n}\nGROUP BY ?stadium_name\n```",
+    "execution_result": {
+      "cleaned_query": "SELECT ?stadium_name (COUNT(?concert) AS ?concert_count)\nWHERE {\n  ?stadium rdf:type :stadium .\n  ?stadium :stadium\\#name ?stadium_name .\n  OPTIONAL {\n    ?concert :concert\\#ref-stadium_id ?stadium .\n  }\n}\nGROUP BY ?stadium_name",
+      "resolved_query": "PREFIX : <http://valuenet/ontop/>\nPREFIX doap: <http://usefulinc.com/ns/doap#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX void: <http://rdfs.org/ns/void#>\nPREFIX brick: <https://brickschema.org/schema/Brick#>\nPREFIX csvw: <http://www.w3.org/ns/csvw#>\nPREFIX dc: <http://purl.org/dc/elements/1.1/>\nPREFIX dcam: <http://purl.org/dc/dcam/>\nPREFIX dcat: <http://www.w3.org/ns/dcat#>\nPREFIX dcmitype: <http://purl.org/dc/dcmitype/>\nPREFIX dcterms: <http://purl.org/dc/terms/>\nPREFIX foaf: <http://xmlns.com/foaf/0.1/>\nPREFIX odrl: <http://www.w3.org/ns/odrl/2/>\nPREFIX org: <http://www.w3.org/ns/org#>\nPREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX prof: <http://www.w3.org/ns/dx/prof/>\nPREFIX prov: <http://www.w3.org/ns/prov#>\nPREFIX qb: <http://purl.org/linked-data/cube#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX schema: <https://schema.org/>\nPREFIX sh: <http://www.w3.org/ns/shacl#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX sosa: <http://www.w3.org/ns/sosa/>\nPREFIX ssn: <http://www.w3.org/ns/ssn/>\nPREFIX time: <http://www.w3.org/2006/time#>\nPREFIX vann: <http://purl.org/vocab/vann/>\nPREFIX wgs: <https://www.w3.org/2003/01/geo/wgs84_pos#>\nPREFIX xml: <http://www.w3.org/XML/1998/namespace>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n\nSELECT ?stadium_name (COUNT(?concert) AS ?concert_count)\nWHERE {\n  ?stadium rdf:type :stadium .\n  ?stadium :stadium\\#name ?stadium_name .\n  OPTIONAL {\n    ?concert :concert\\#ref-stadium_id ?stadium .\n  }\n}\nGROUP BY ?stadium_name",
+      "full_graph_file": "spider4sparql/concert_singer.ttl",
+      "execution_success": true,
+      "results": [
+        [
+          "Stark's Park",
+          "1"
+        ],
+        [
+          "Somerset Park",
+          "2"
+        ],
+        [
+          "Bayview Stadium",
+          "0"
+        ],
+        [
+          "Hampden Park",
+          "0"
+        ],
+        [
+          "Forthbank Stadium",
+          "0"
+        ],
+        [
+          "Gayfield Park",
+          "0"
+        ],
+        [
+          "Recreation Park",
+          "1"
+        ],
+        [
+          "Balmoor",
+          "1"
+        ],
+        [
+          "Glebe Park",
+          "1"
+        ]
+      ],
+      "gold_result": [
+        [
+          "Stark's Park",
+          "1"
+        ],
+        [
+          "Somerset Park",
+          "2"
+        ],
+        [
+          "Recreation Park",
+          "1"
+        ],
+        [
+          "Balmoor",
+          "1"
+        ],
+        [
+          "Glebe Park",
+          "1"
+        ]
+      ],
+      "error": null
+    },
+    "comment": "giusta",
+    "processing_time": 47.27
+  },
+  {
+    "id": 25,
+    "question_index": 24,
+    "model": "qwen2.5-coder:14b",
+    "backend": "ollama",
+    "result": "```sparql\nSELECT ?stadium_name ?capacity\nWHERE {\n  ?concert :concert\\#year ?year .\n  FILTER(?year >= \"2014\") .\n  ?concert :concert\\#ref-stadium_id ?stadium .\n  ?stadium :stadium\\#name ?stadium_name .\n  ?stadium :stadium\\#capacity ?capacity .\n}\nGROUP BY ?stadium_name ?capacity\nORDER BY DESC(COUNT(?concert))\nLIMIT 1\n```",
+    "execution_result": {
+      "cleaned_query": "SELECT ?stadium_name ?capacity\nWHERE {\n  ?concert :concert\\#year ?year .\n  FILTER(?year >= \"2014\") .\n  ?concert :concert\\#ref-stadium_id ?stadium .\n  ?stadium :stadium\\#name ?stadium_name .\n  ?stadium :stadium\\#capacity ?capacity .\n}\nGROUP BY ?stadium_name ?capacity\nORDER BY DESC(COUNT(?concert))\nLIMIT 1",
+      "resolved_query": "PREFIX : <http://valuenet/ontop/>\nPREFIX doap: <http://usefulinc.com/ns/doap#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX void: <http://rdfs.org/ns/void#>\nPREFIX brick: <https://brickschema.org/schema/Brick#>\nPREFIX csvw: <http://www.w3.org/ns/csvw#>\nPREFIX dc: <http://purl.org/dc/elements/1.1/>\nPREFIX dcam: <http://purl.org/dc/dcam/>\nPREFIX dcat: <http://www.w3.org/ns/dcat#>\nPREFIX dcmitype: <http://purl.org/dc/dcmitype/>\nPREFIX dcterms: <http://purl.org/dc/terms/>\nPREFIX foaf: <http://xmlns.com/foaf/0.1/>\nPREFIX odrl: <http://www.w3.org/ns/odrl/2/>\nPREFIX org: <http://www.w3.org/ns/org#>\nPREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX prof: <http://www.w3.org/ns/dx/prof/>\nPREFIX prov: <http://www.w3.org/ns/prov#>\nPREFIX qb: <http://purl.org/linked-data/cube#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX schema: <https://schema.org/>\nPREFIX sh: <http://www.w3.org/ns/shacl#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX sosa: <http://www.w3.org/ns/sosa/>\nPREFIX ssn: <http://www.w3.org/ns/ssn/>\nPREFIX time: <http://www.w3.org/2006/time#>\nPREFIX vann: <http://purl.org/vocab/vann/>\nPREFIX wgs: <https://www.w3.org/2003/01/geo/wgs84_pos#>\nPREFIX xml: <http://www.w3.org/XML/1998/namespace>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n\nSELECT ?stadium_name ?capacity\nWHERE {\n  ?concert :concert\\#year ?year .\n  FILTER(?year >= \"2014\") .\n  ?concert :concert\\#ref-stadium_id ?stadium .\n  ?stadium :stadium\\#name ?stadium_name .\n  ?stadium :stadium\\#capacity ?capacity .\n}\nGROUP BY ?stadium_name ?capacity\nORDER BY DESC(COUNT(?concert))\nLIMIT 1",
+      "full_graph_file": "spider4sparql/concert_singer.ttl",
+      "execution_success": true,
+      "results": [
+        [
+          "Somerset Park",
+          "11998"
+        ]
+      ],
+      "gold_result": [
+        [
+          "Somerset Park",
+          "2",
+          "11998"
+        ]
+      ],
+      "error": null
+    },
+    "comment": "potrebbe proiettare il numero di concerti",
+    "processing_time": 62.05
+  },
+  {
+    "id": 26,
+    "question_index": 25,
+    "model": "qwen2.5-coder:14b",
+    "backend": "ollama",
+    "result": "```sparql\nSELECT ?stadium_name ?stadium_capacity\nWHERE {\n  ?concert rdf:type :concert ;\n           :concert\\#year ?year ;\n           :concert\\#ref-stadium_id ?stadium .\n  ?stadium :stadium\\#name ?stadium_name ;\n           :stadium\\#capacity ?stadium_capacity .\n  FILTER(?year > \"2013\")\n}\nGROUP BY ?stadium_name ?stadium_capacity\nORDER BY DESC(COUNT(?concert))\nLIMIT 1\n```",
+    "execution_result": {
+      "cleaned_query": "SELECT ?stadium_name ?stadium_capacity\nWHERE {\n  ?concert rdf:type :concert ;\n           :concert\\#year ?year ;\n           :concert\\#ref-stadium_id ?stadium .\n  ?stadium :stadium\\#name ?stadium_name ;\n           :stadium\\#capacity ?stadium_capacity .\n  FILTER(?year > \"2013\")\n}\nGROUP BY ?stadium_name ?stadium_capacity\nORDER BY DESC(COUNT(?concert))\nLIMIT 1",
+      "resolved_query": "PREFIX : <http://valuenet/ontop/>\nPREFIX doap: <http://usefulinc.com/ns/doap#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX void: <http://rdfs.org/ns/void#>\nPREFIX brick: <https://brickschema.org/schema/Brick#>\nPREFIX csvw: <http://www.w3.org/ns/csvw#>\nPREFIX dc: <http://purl.org/dc/elements/1.1/>\nPREFIX dcam: <http://purl.org/dc/dcam/>\nPREFIX dcat: <http://www.w3.org/ns/dcat#>\nPREFIX dcmitype: <http://purl.org/dc/dcmitype/>\nPREFIX dcterms: <http://purl.org/dc/terms/>\nPREFIX foaf: <http://xmlns.com/foaf/0.1/>\nPREFIX odrl: <http://www.w3.org/ns/odrl/2/>\nPREFIX org: <http://www.w3.org/ns/org#>\nPREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX prof: <http://www.w3.org/ns/dx/prof/>\nPREFIX prov: <http://www.w3.org/ns/prov#>\nPREFIX qb: <http://purl.org/linked-data/cube#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX schema: <https://schema.org/>\nPREFIX sh: <http://www.w3.org/ns/shacl#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX sosa: <http://www.w3.org/ns/sosa/>\nPREFIX ssn: <http://www.w3.org/ns/ssn/>\nPREFIX time: <http://www.w3.org/2006/time#>\nPREFIX vann: <http://purl.org/vocab/vann/>\nPREFIX wgs: <https://www.w3.org/2003/01/geo/wgs84_pos#>\nPREFIX xml: <http://www.w3.org/XML/1998/namespace>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n\nSELECT ?stadium_name ?stadium_capacity\nWHERE {\n  ?concert rdf:type :concert ;\n           :concert\\#year ?year ;\n           :concert\\#ref-stadium_id ?stadium .\n  ?stadium :stadium\\#name ?stadium_name ;\n           :stadium\\#capacity ?stadium_capacity .\n  FILTER(?year > \"2013\")\n}\nGROUP BY ?stadium_name ?stadium_capacity\nORDER BY DESC(COUNT(?concert))\nLIMIT 1",
+      "full_graph_file": "spider4sparql/concert_singer.ttl",
+      "execution_success": true,
+      "results": [
+        [
+          "Somerset Park",
+          "11998"
+        ]
+      ],
+      "gold_result": [
+        [
+          "Somerset Park",
+          "2",
+          "11998"
+        ]
+      ],
+      "error": null
+    },
+    "comment": "potrebbe proiettare il numero di concerti",
+    "processing_time": 64.04
+  },
+  {
+    "id": 27,
+    "question_index": 26,
+    "model": "qwen2.5-coder:14b",
+    "backend": "ollama",
+    "result": "```sparql\nSELECT ?year (COUNT(?concert) AS ?count)\nWHERE {\n  ?concert rdf:type :concert .\n  ?concert :concert\\#year ?year .\n}\nGROUP BY ?year\nORDER BY DESC(?count)\nLIMIT 1\n```",
+    "execution_result": {
+      "cleaned_query": "SELECT ?year (COUNT(?concert) AS ?count)\nWHERE {\n  ?concert rdf:type :concert .\n  ?concert :concert\\#year ?year .\n}\nGROUP BY ?year\nORDER BY DESC(?count)\nLIMIT 1",
+      "resolved_query": "PREFIX : <http://valuenet/ontop/>\nPREFIX doap: <http://usefulinc.com/ns/doap#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX void: <http://rdfs.org/ns/void#>\nPREFIX brick: <https://brickschema.org/schema/Brick#>\nPREFIX csvw: <http://www.w3.org/ns/csvw#>\nPREFIX dc: <http://purl.org/dc/elements/1.1/>\nPREFIX dcam: <http://purl.org/dc/dcam/>\nPREFIX dcat: <http://www.w3.org/ns/dcat#>\nPREFIX dcmitype: <http://purl.org/dc/dcmitype/>\nPREFIX dcterms: <http://purl.org/dc/terms/>\nPREFIX foaf: <http://xmlns.com/foaf/0.1/>\nPREFIX odrl: <http://www.w3.org/ns/odrl/2/>\nPREFIX org: <http://www.w3.org/ns/org#>\nPREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX prof: <http://www.w3.org/ns/dx/prof/>\nPREFIX prov: <http://www.w3.org/ns/prov#>\nPREFIX qb: <http://purl.org/linked-data/cube#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX schema: <https://schema.org/>\nPREFIX sh: <http://www.w3.org/ns/shacl#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX sosa: <http://www.w3.org/ns/sosa/>\nPREFIX ssn: <http://www.w3.org/ns/ssn/>\nPREFIX time: <http://www.w3.org/2006/time#>\nPREFIX vann: <http://purl.org/vocab/vann/>\nPREFIX wgs: <https://www.w3.org/2003/01/geo/wgs84_pos#>\nPREFIX xml: <http://www.w3.org/XML/1998/namespace>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n\nSELECT ?year (COUNT(?concert) AS ?count)\nWHERE {\n  ?concert rdf:type :concert .\n  ?concert :concert\\#year ?year .\n}\nGROUP BY ?year\nORDER BY DESC(?count)\nLIMIT 1",
+      "full_graph_file": "spider4sparql/concert_singer.ttl",
+      "execution_success": true,
+      "results": [
+        [
+          "2014",
+          "3"
+        ]
+      ],
+      "gold_result": [
+        [
+          "2014",
+          "3"
+        ]
+      ],
+      "error": null
+    },
+    "comment": "",
+    "processing_time": 138.31
+  },
+  {
+    "id": 28,
+    "question_index": 27,
+    "model": "qwen2.5-coder:14b",
+    "backend": "ollama",
+    "result": "```sparql\nSELECT ?year (COUNT(?concert) AS ?count)\nWHERE {\n  ?concert rdf:type :concert ;\n           :concert\\#year ?year .\n}\nGROUP BY ?year\nORDER BY DESC(?count)\nLIMIT 1\n```",
+    "execution_result": {
+      "cleaned_query": "SELECT ?year (COUNT(?concert) AS ?count)\nWHERE {\n  ?concert rdf:type :concert ;\n           :concert\\#year ?year .\n}\nGROUP BY ?year\nORDER BY DESC(?count)\nLIMIT 1",
+      "resolved_query": "PREFIX : <http://valuenet/ontop/>\nPREFIX doap: <http://usefulinc.com/ns/doap#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX void: <http://rdfs.org/ns/void#>\nPREFIX brick: <https://brickschema.org/schema/Brick#>\nPREFIX csvw: <http://www.w3.org/ns/csvw#>\nPREFIX dc: <http://purl.org/dc/elements/1.1/>\nPREFIX dcam: <http://purl.org/dc/dcam/>\nPREFIX dcat: <http://www.w3.org/ns/dcat#>\nPREFIX dcmitype: <http://purl.org/dc/dcmitype/>\nPREFIX dcterms: <http://purl.org/dc/terms/>\nPREFIX foaf: <http://xmlns.com/foaf/0.1/>\nPREFIX odrl: <http://www.w3.org/ns/odrl/2/>\nPREFIX org: <http://www.w3.org/ns/org#>\nPREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX prof: <http://www.w3.org/ns/dx/prof/>\nPREFIX prov: <http://www.w3.org/ns/prov#>\nPREFIX qb: <http://purl.org/linked-data/cube#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX schema: <https://schema.org/>\nPREFIX sh: <http://www.w3.org/ns/shacl#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX sosa: <http://www.w3.org/ns/sosa/>\nPREFIX ssn: <http://www.w3.org/ns/ssn/>\nPREFIX time: <http://www.w3.org/2006/time#>\nPREFIX vann: <http://purl.org/vocab/vann/>\nPREFIX wgs: <https://www.w3.org/2003/01/geo/wgs84_pos#>\nPREFIX xml: <http://www.w3.org/XML/1998/namespace>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n\nSELECT ?year (COUNT(?concert) AS ?count)\nWHERE {\n  ?concert rdf:type :concert ;\n           :concert\\#year ?year .\n}\nGROUP BY ?year\nORDER BY DESC(?count)\nLIMIT 1",
+      "full_graph_file": "spider4sparql/concert_singer.ttl",
+      "execution_success": true,
+      "results": [
+        [
+          "2014",
+          "3"
+        ]
+      ],
+      "gold_result": [
+        [
+          "2014",
+          "3"
+        ]
+      ],
+      "error": null
+    },
+    "comment": "",
+    "processing_time": 30.47
+  },
+  {
+    "id": 29,
+    "question_index": 28,
+    "model": "qwen2.5-coder:14b",
+    "backend": "ollama",
+    "result": "```sparql\nSELECT ?stadium_name\nWHERE {\n  ?stadium rdf:type :stadium .\n  ?stadium :stadium\\#name ?stadium_name .\n  FILTER NOT EXISTS {\n    ?concert :concert\\#ref-stadium_id ?stadium .\n  }\n}\n```",
+    "execution_result": {
+      "cleaned_query": "SELECT ?stadium_name\nWHERE {\n  ?stadium rdf:type :stadium .\n  ?stadium :stadium\\#name ?stadium_name .\n  FILTER NOT EXISTS {\n    ?concert :concert\\#ref-stadium_id ?stadium .\n  }\n}",
+      "resolved_query": "PREFIX : <http://valuenet/ontop/>\nPREFIX doap: <http://usefulinc.com/ns/doap#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX void: <http://rdfs.org/ns/void#>\nPREFIX brick: <https://brickschema.org/schema/Brick#>\nPREFIX csvw: <http://www.w3.org/ns/csvw#>\nPREFIX dc: <http://purl.org/dc/elements/1.1/>\nPREFIX dcam: <http://purl.org/dc/dcam/>\nPREFIX dcat: <http://www.w3.org/ns/dcat#>\nPREFIX dcmitype: <http://purl.org/dc/dcmitype/>\nPREFIX dcterms: <http://purl.org/dc/terms/>\nPREFIX foaf: <http://xmlns.com/foaf/0.1/>\nPREFIX odrl: <http://www.w3.org/ns/odrl/2/>\nPREFIX org: <http://www.w3.org/ns/org#>\nPREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX prof: <http://www.w3.org/ns/dx/prof/>\nPREFIX prov: <http://www.w3.org/ns/prov#>\nPREFIX qb: <http://purl.org/linked-data/cube#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX schema: <https://schema.org/>\nPREFIX sh: <http://www.w3.org/ns/shacl#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX sosa: <http://www.w3.org/ns/sosa/>\nPREFIX ssn: <http://www.w3.org/ns/ssn/>\nPREFIX time: <http://www.w3.org/2006/time#>\nPREFIX vann: <http://purl.org/vocab/vann/>\nPREFIX wgs: <https://www.w3.org/2003/01/geo/wgs84_pos#>\nPREFIX xml: <http://www.w3.org/XML/1998/namespace>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n\nSELECT ?stadium_name\nWHERE {\n  ?stadium rdf:type :stadium .\n  ?stadium :stadium\\#name ?stadium_name .\n  FILTER NOT EXISTS {\n    ?concert :concert\\#ref-stadium_id ?stadium .\n  }\n}",
+      "full_graph_file": "spider4sparql/concert_singer.ttl",
+      "execution_success": true,
+      "results": [
+        [
+          "Bayview Stadium"
+        ],
+        [
+          "Hampden Park"
+        ],
+        [
+          "Forthbank Stadium"
+        ],
+        [
+          "Gayfield Park"
+        ]
+      ],
+      "gold_result": [
+        [
+          "Bayview Stadium"
+        ],
+        [
+          "Hampden Park"
+        ],
+        [
+          "Forthbank Stadium"
+        ],
+        [
+          "Gayfield Park"
+        ]
+      ],
+      "error": null
+    },
+    "comment": "",
+    "processing_time": 212.34
+  },
+  {
+    "id": 30,
+    "question_index": 29,
+    "model": "qwen2.5-coder:14b",
+    "backend": "ollama",
+    "result": "```sparql\nSELECT ?stadium_name\nWHERE {\n  ?stadium rdf:type :stadium .\n  ?stadium :stadium\\#name ?stadium_name .\n  FILTER NOT EXISTS {\n    ?concert :concert\\#ref-stadium_id ?stadium .\n  }\n}\n```",
+    "execution_result": {
+      "cleaned_query": "SELECT ?stadium_name\nWHERE {\n  ?stadium rdf:type :stadium .\n  ?stadium :stadium\\#name ?stadium_name .\n  FILTER NOT EXISTS {\n    ?concert :concert\\#ref-stadium_id ?stadium .\n  }\n}",
+      "resolved_query": "PREFIX : <http://valuenet/ontop/>\nPREFIX doap: <http://usefulinc.com/ns/doap#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX void: <http://rdfs.org/ns/void#>\nPREFIX brick: <https://brickschema.org/schema/Brick#>\nPREFIX csvw: <http://www.w3.org/ns/csvw#>\nPREFIX dc: <http://purl.org/dc/elements/1.1/>\nPREFIX dcam: <http://purl.org/dc/dcam/>\nPREFIX dcat: <http://www.w3.org/ns/dcat#>\nPREFIX dcmitype: <http://purl.org/dc/dcmitype/>\nPREFIX dcterms: <http://purl.org/dc/terms/>\nPREFIX foaf: <http://xmlns.com/foaf/0.1/>\nPREFIX odrl: <http://www.w3.org/ns/odrl/2/>\nPREFIX org: <http://www.w3.org/ns/org#>\nPREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX prof: <http://www.w3.org/ns/dx/prof/>\nPREFIX prov: <http://www.w3.org/ns/prov#>\nPREFIX qb: <http://purl.org/linked-data/cube#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX schema: <https://schema.org/>\nPREFIX sh: <http://www.w3.org/ns/shacl#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX sosa: <http://www.w3.org/ns/sosa/>\nPREFIX ssn: <http://www.w3.org/ns/ssn/>\nPREFIX time: <http://www.w3.org/2006/time#>\nPREFIX vann: <http://purl.org/vocab/vann/>\nPREFIX wgs: <https://www.w3.org/2003/01/geo/wgs84_pos#>\nPREFIX xml: <http://www.w3.org/XML/1998/namespace>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n\nSELECT ?stadium_name\nWHERE {\n  ?stadium rdf:type :stadium .\n  ?stadium :stadium\\#name ?stadium_name .\n  FILTER NOT EXISTS {\n    ?concert :concert\\#ref-stadium_id ?stadium .\n  }\n}",
+      "full_graph_file": "spider4sparql/concert_singer.ttl",
+      "execution_success": true,
+      "results": [
+        [
+          "Bayview Stadium"
+        ],
+        [
+          "Hampden Park"
+        ],
+        [
+          "Forthbank Stadium"
+        ],
+        [
+          "Gayfield Park"
+        ]
+      ],
+      "gold_result": [
+        [
+          "Bayview Stadium"
+        ],
+        [
+          "Hampden Park"
+        ],
+        [
+          "Forthbank Stadium"
+        ],
+        [
+          "Gayfield Park"
+        ]
+      ],
+      "error": null
+    },
+    "comment": "",
+    "processing_time": 40.71
+  },
+  {
+    "id": 31,
+    "question_index": 30,
+    "model": "qwen2.5-coder:14b",
+    "backend": "ollama",
+    "result": "```sparql\nSELECT DISTINCT ?country\nWHERE {\n  {\n    ?singer1 rdf:type :singer ;\n             :singer\\#age ?age1 ;\n             :singer\\#country ?country .\n    FILTER(?age1 > 40)\n  }\n  UNION\n  {\n    ?singer2 rdf:type :singer ;\n             :singer\\#age ?age2 ;\n             :singer\\#country ?country .\n    FILTER(?age2 < 30)\n  }\n}\n```",
+    "execution_result": {
+      "cleaned_query": "SELECT DISTINCT ?country\nWHERE {\n  {\n    ?singer1 rdf:type :singer ;\n             :singer\\#age ?age1 ;\n             :singer\\#country ?country .\n    FILTER(?age1 > 40)\n  }\n  UNION\n  {\n    ?singer2 rdf:type :singer ;\n             :singer\\#age ?age2 ;\n             :singer\\#country ?country .\n    FILTER(?age2 < 30)\n  }\n}",
+      "resolved_query": "PREFIX : <http://valuenet/ontop/>\nPREFIX doap: <http://usefulinc.com/ns/doap#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX void: <http://rdfs.org/ns/void#>\nPREFIX brick: <https://brickschema.org/schema/Brick#>\nPREFIX csvw: <http://www.w3.org/ns/csvw#>\nPREFIX dc: <http://purl.org/dc/elements/1.1/>\nPREFIX dcam: <http://purl.org/dc/dcam/>\nPREFIX dcat: <http://www.w3.org/ns/dcat#>\nPREFIX dcmitype: <http://purl.org/dc/dcmitype/>\nPREFIX dcterms: <http://purl.org/dc/terms/>\nPREFIX foaf: <http://xmlns.com/foaf/0.1/>\nPREFIX odrl: <http://www.w3.org/ns/odrl/2/>\nPREFIX org: <http://www.w3.org/ns/org#>\nPREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX prof: <http://www.w3.org/ns/dx/prof/>\nPREFIX prov: <http://www.w3.org/ns/prov#>\nPREFIX qb: <http://purl.org/linked-data/cube#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX schema: <https://schema.org/>\nPREFIX sh: <http://www.w3.org/ns/shacl#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX sosa: <http://www.w3.org/ns/sosa/>\nPREFIX ssn: <http://www.w3.org/ns/ssn/>\nPREFIX time: <http://www.w3.org/2006/time#>\nPREFIX vann: <http://purl.org/vocab/vann/>\nPREFIX wgs: <https://www.w3.org/2003/01/geo/wgs84_pos#>\nPREFIX xml: <http://www.w3.org/XML/1998/namespace>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n\nSELECT DISTINCT ?country\nWHERE {\n  {\n    ?singer1 rdf:type :singer ;\n             :singer\\#age ?age1 ;\n             :singer\\#country ?country .\n    FILTER(?age1 > 40)\n  }\n  UNION\n  {\n    ?singer2 rdf:type :singer ;\n             :singer\\#age ?age2 ;\n             :singer\\#country ?country .\n    FILTER(?age2 < 30)\n  }\n}",
+      "full_graph_file": "spider4sparql/concert_singer.ttl",
+      "execution_success": true,
+      "results": [
+        [
+          "Netherlands"
+        ],
+        [
+          "France"
+        ]
+      ],
+      "gold_result": [
+        [
+          "France"
+        ]
+      ],
+      "error": null
+    },
+    "comment": "log",
+    "processing_time": 167.5
+  },
+  {
+    "id": 32,
+    "question_index": 31,
+    "model": "qwen2.5-coder:14b",
+    "backend": "ollama",
+    "result": "```sparql\nSELECT ?stadium_name\nWHERE {\n  ?stadium rdf:type :stadium ;\n           :stadium\\#name ?stadium_name .\n  FILTER NOT EXISTS {\n    ?concert rdf:type :concert ;\n             :concert\\#year \"2014\" ;\n             :concert\\#ref-stadium_id ?stadium .\n  }\n}\n```",
+    "execution_result": {
+      "cleaned_query": "SELECT ?stadium_name\nWHERE {\n  ?stadium rdf:type :stadium ;\n           :stadium\\#name ?stadium_name .\n  FILTER NOT EXISTS {\n    ?concert rdf:type :concert ;\n             :concert\\#year \"2014\" ;\n             :concert\\#ref-stadium_id ?stadium .\n  }\n}",
+      "resolved_query": "PREFIX : <http://valuenet/ontop/>\nPREFIX doap: <http://usefulinc.com/ns/doap#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX void: <http://rdfs.org/ns/void#>\nPREFIX brick: <https://brickschema.org/schema/Brick#>\nPREFIX csvw: <http://www.w3.org/ns/csvw#>\nPREFIX dc: <http://purl.org/dc/elements/1.1/>\nPREFIX dcam: <http://purl.org/dc/dcam/>\nPREFIX dcat: <http://www.w3.org/ns/dcat#>\nPREFIX dcmitype: <http://purl.org/dc/dcmitype/>\nPREFIX dcterms: <http://purl.org/dc/terms/>\nPREFIX foaf: <http://xmlns.com/foaf/0.1/>\nPREFIX odrl: <http://www.w3.org/ns/odrl/2/>\nPREFIX org: <http://www.w3.org/ns/org#>\nPREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX prof: <http://www.w3.org/ns/dx/prof/>\nPREFIX prov: <http://www.w3.org/ns/prov#>\nPREFIX qb: <http://purl.org/linked-data/cube#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX schema: <https://schema.org/>\nPREFIX sh: <http://www.w3.org/ns/shacl#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX sosa: <http://www.w3.org/ns/sosa/>\nPREFIX ssn: <http://www.w3.org/ns/ssn/>\nPREFIX time: <http://www.w3.org/2006/time#>\nPREFIX vann: <http://purl.org/vocab/vann/>\nPREFIX wgs: <https://www.w3.org/2003/01/geo/wgs84_pos#>\nPREFIX xml: <http://www.w3.org/XML/1998/namespace>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n\nSELECT ?stadium_name\nWHERE {\n  ?stadium rdf:type :stadium ;\n           :stadium\\#name ?stadium_name .\n  FILTER NOT EXISTS {\n    ?concert rdf:type :concert ;\n             :concert\\#year \"2014\" ;\n             :concert\\#ref-stadium_id ?stadium .\n  }\n}",
+      "full_graph_file": "spider4sparql/concert_singer.ttl",
+      "execution_success": true,
+      "results": [
+        [
+          "Bayview Stadium"
+        ],
+        [
+          "Hampden Park"
+        ],
+        [
+          "Forthbank Stadium"
+        ],
+        [
+          "Gayfield Park"
+        ],
+        [
+          "Recreation Park"
+        ],
+        [
+          "Balmoor"
+        ]
+      ],
+      "gold_result": [
+        [
+          "Bayview Stadium"
+        ],
+        [
+          "Hampden Park"
+        ],
+        [
+          "Forthbank Stadium"
+        ],
+        [
+          "Gayfield Park"
+        ],
+        [
+          "Recreation Park"
+        ],
+        [
+          "Balmoor"
+        ]
+      ],
+      "error": null
+    },
+    "comment": "",
+    "processing_time": 54.25
+  },
+  {
+    "id": 33,
+    "question_index": 32,
+    "model": "qwen2.5-coder:14b",
+    "backend": "ollama",
+    "result": "```sparql\nSELECT ?stadium_name\nWHERE {\n  ?stadium rdf:type :stadium .\n  ?stadium :stadium\\#name ?stadium_name .\n  FILTER NOT EXISTS {\n    ?concert rdf:type :concert .\n    ?concert :concert\\#ref-stadium_id ?stadium .\n    ?concert :concert\\#year \"2014\" .\n  }\n}\n```",
+    "execution_result": {
+      "cleaned_query": "SELECT ?stadium_name\nWHERE {\n  ?stadium rdf:type :stadium .\n  ?stadium :stadium\\#name ?stadium_name .\n  FILTER NOT EXISTS {\n    ?concert rdf:type :concert .\n    ?concert :concert\\#ref-stadium_id ?stadium .\n    ?concert :concert\\#year \"2014\" .\n  }\n}",
+      "resolved_query": "PREFIX : <http://valuenet/ontop/>\nPREFIX doap: <http://usefulinc.com/ns/doap#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX void: <http://rdfs.org/ns/void#>\nPREFIX brick: <https://brickschema.org/schema/Brick#>\nPREFIX csvw: <http://www.w3.org/ns/csvw#>\nPREFIX dc: <http://purl.org/dc/elements/1.1/>\nPREFIX dcam: <http://purl.org/dc/dcam/>\nPREFIX dcat: <http://www.w3.org/ns/dcat#>\nPREFIX dcmitype: <http://purl.org/dc/dcmitype/>\nPREFIX dcterms: <http://purl.org/dc/terms/>\nPREFIX foaf: <http://xmlns.com/foaf/0.1/>\nPREFIX odrl: <http://www.w3.org/ns/odrl/2/>\nPREFIX org: <http://www.w3.org/ns/org#>\nPREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX prof: <http://www.w3.org/ns/dx/prof/>\nPREFIX prov: <http://www.w3.org/ns/prov#>\nPREFIX qb: <http://purl.org/linked-data/cube#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX schema: <https://schema.org/>\nPREFIX sh: <http://www.w3.org/ns/shacl#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX sosa: <http://www.w3.org/ns/sosa/>\nPREFIX ssn: <http://www.w3.org/ns/ssn/>\nPREFIX time: <http://www.w3.org/2006/time#>\nPREFIX vann: <http://purl.org/vocab/vann/>\nPREFIX wgs: <https://www.w3.org/2003/01/geo/wgs84_pos#>\nPREFIX xml: <http://www.w3.org/XML/1998/namespace>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n\nSELECT ?stadium_name\nWHERE {\n  ?stadium rdf:type :stadium .\n  ?stadium :stadium\\#name ?stadium_name .\n  FILTER NOT EXISTS {\n    ?concert rdf:type :concert .\n    ?concert :concert\\#ref-stadium_id ?stadium .\n    ?concert :concert\\#year \"2014\" .\n  }\n}",
+      "full_graph_file": "spider4sparql/concert_singer.ttl",
+      "execution_success": true,
+      "results": [
+        [
+          "Bayview Stadium"
+        ],
+        [
+          "Hampden Park"
+        ],
+        [
+          "Forthbank Stadium"
+        ],
+        [
+          "Gayfield Park"
+        ],
+        [
+          "Recreation Park"
+        ],
+        [
+          "Balmoor"
+        ]
+      ],
+      "gold_result": [
+        [
+          "Bayview Stadium"
+        ],
+        [
+          "Hampden Park"
+        ],
+        [
+          "Forthbank Stadium"
+        ],
+        [
+          "Gayfield Park"
+        ],
+        [
+          "Recreation Park"
+        ],
+        [
+          "Balmoor"
+        ]
+      ],
+      "error": null
+    },
+    "comment": "",
+    "processing_time": 92.25
+  },
+  {
+    "id": 34,
+    "question_index": 33,
+    "model": "qwen2.5-coder:14b",
+    "backend": "ollama",
+    "result": "```sparql\nSELECT ?concert_name ?theme (COUNT(?singer_id) AS ?number_of_singers)\nWHERE {\n  ?concert rdf:type :concert ;\n           :concert\\#concert_name ?concert_name ;\n           :concert\\#theme ?theme .\n  OPTIONAL {\n    ?singer_in_concert :singer_in_concert\\#ref-concert_id ?concert ;\n                       :singer_in_concert\\#singer_id ?singer_id .\n  }\n}\nGROUP BY ?concert_name ?theme\n```",
+    "execution_result": {
+      "cleaned_query": "SELECT ?concert_name ?theme (COUNT(?singer_id) AS ?number_of_singers)\nWHERE {\n  ?concert rdf:type :concert ;\n           :concert\\#concert_name ?concert_name ;\n           :concert\\#theme ?theme .\n  OPTIONAL {\n    ?singer_in_concert :singer_in_concert\\#ref-concert_id ?concert ;\n                       :singer_in_concert\\#singer_id ?singer_id .\n  }\n}\nGROUP BY ?concert_name ?theme",
+      "resolved_query": "PREFIX : <http://valuenet/ontop/>\nPREFIX doap: <http://usefulinc.com/ns/doap#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX void: <http://rdfs.org/ns/void#>\nPREFIX brick: <https://brickschema.org/schema/Brick#>\nPREFIX csvw: <http://www.w3.org/ns/csvw#>\nPREFIX dc: <http://purl.org/dc/elements/1.1/>\nPREFIX dcam: <http://purl.org/dc/dcam/>\nPREFIX dcat: <http://www.w3.org/ns/dcat#>\nPREFIX dcmitype: <http://purl.org/dc/dcmitype/>\nPREFIX dcterms: <http://purl.org/dc/terms/>\nPREFIX foaf: <http://xmlns.com/foaf/0.1/>\nPREFIX odrl: <http://www.w3.org/ns/odrl/2/>\nPREFIX org: <http://www.w3.org/ns/org#>\nPREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX prof: <http://www.w3.org/ns/dx/prof/>\nPREFIX prov: <http://www.w3.org/ns/prov#>\nPREFIX qb: <http://purl.org/linked-data/cube#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX schema: <https://schema.org/>\nPREFIX sh: <http://www.w3.org/ns/shacl#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX sosa: <http://www.w3.org/ns/sosa/>\nPREFIX ssn: <http://www.w3.org/ns/ssn/>\nPREFIX time: <http://www.w3.org/2006/time#>\nPREFIX vann: <http://purl.org/vocab/vann/>\nPREFIX wgs: <https://www.w3.org/2003/01/geo/wgs84_pos#>\nPREFIX xml: <http://www.w3.org/XML/1998/namespace>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n\nSELECT ?concert_name ?theme (COUNT(?singer_id) AS ?number_of_singers)\nWHERE {\n  ?concert rdf:type :concert ;\n           :concert\\#concert_name ?concert_name ;\n           :concert\\#theme ?theme .\n  OPTIONAL {\n    ?singer_in_concert :singer_in_concert\\#ref-concert_id ?concert ;\n                       :singer_in_concert\\#singer_id ?singer_id .\n  }\n}\nGROUP BY ?concert_name ?theme",
+      "full_graph_file": "spider4sparql/concert_singer.ttl",
+      "execution_success": true,
+      "results": [
+        [
+          "Auditions",
+          "Free choice",
+          "3"
+        ],
+        [
+          "Super bootcamp",
+          "Free choice 2",
+          "2"
+        ],
+        [
+          "Home Visits",
+          "Bleeding Love",
+          "1"
+        ],
+        [
+          "Week 1",
+          "Wide Awake",
+          "1"
+        ],
+        [
+          "Week 1",
+          "Happy Tonight",
+          "2"
+        ],
+        [
+          "Week 2",
+          "Party All Night",
+          "1"
+        ]
+      ],
+      "gold_result": [
+        [
+          "Auditions",
+          "Free choice",
+          "3"
+        ],
+        [
+          "Super bootcamp",
+          "Free choice 2",
+          "2"
+        ],
+        [
+          "Home Visits",
+          "Bleeding Love",
+          "1"
+        ],
+        [
+          "Week 1",
+          "Wide Awake",
+          "1"
+        ],
+        [
+          "Week 1",
+          "Happy Tonight",
+          "2"
+        ],
+        [
+          "Week 2",
+          "Party All Night",
+          "1"
+        ]
+      ],
+      "error": null
+    },
+    "comment": "",
+    "processing_time": 209.11
+  },
+  {
+    "id": 35,
+    "question_index": 34,
+    "model": "qwen2.5-coder:14b",
+    "backend": "ollama",
+    "result": "```sparql\nSELECT ?concert_name ?theme (COUNT(?singer_id) AS ?number_of_singers)\nWHERE {\n  ?concert rdf:type :concert ;\n           :concert\\#concert_name ?concert_name ;\n           :concert\\#theme ?theme .\n  OPTIONAL {\n    ?singer_in_concert :singer_in_concert\\#ref-concert_id ?concert ;\n                       :singer_in_concert\\#singer_id ?singer_id .\n  }\n}\nGROUP BY ?concert_name ?theme\n```",
+    "execution_result": {
+      "cleaned_query": "SELECT ?concert_name ?theme (COUNT(?singer_id) AS ?number_of_singers)\nWHERE {\n  ?concert rdf:type :concert ;\n           :concert\\#concert_name ?concert_name ;\n           :concert\\#theme ?theme .\n  OPTIONAL {\n    ?singer_in_concert :singer_in_concert\\#ref-concert_id ?concert ;\n                       :singer_in_concert\\#singer_id ?singer_id .\n  }\n}\nGROUP BY ?concert_name ?theme",
+      "resolved_query": "PREFIX : <http://valuenet/ontop/>\nPREFIX doap: <http://usefulinc.com/ns/doap#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX void: <http://rdfs.org/ns/void#>\nPREFIX brick: <https://brickschema.org/schema/Brick#>\nPREFIX csvw: <http://www.w3.org/ns/csvw#>\nPREFIX dc: <http://purl.org/dc/elements/1.1/>\nPREFIX dcam: <http://purl.org/dc/dcam/>\nPREFIX dcat: <http://www.w3.org/ns/dcat#>\nPREFIX dcmitype: <http://purl.org/dc/dcmitype/>\nPREFIX dcterms: <http://purl.org/dc/terms/>\nPREFIX foaf: <http://xmlns.com/foaf/0.1/>\nPREFIX odrl: <http://www.w3.org/ns/odrl/2/>\nPREFIX org: <http://www.w3.org/ns/org#>\nPREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX prof: <http://www.w3.org/ns/dx/prof/>\nPREFIX prov: <http://www.w3.org/ns/prov#>\nPREFIX qb: <http://purl.org/linked-data/cube#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX schema: <https://schema.org/>\nPREFIX sh: <http://www.w3.org/ns/shacl#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX sosa: <http://www.w3.org/ns/sosa/>\nPREFIX ssn: <http://www.w3.org/ns/ssn/>\nPREFIX time: <http://www.w3.org/2006/time#>\nPREFIX vann: <http://purl.org/vocab/vann/>\nPREFIX wgs: <https://www.w3.org/2003/01/geo/wgs84_pos#>\nPREFIX xml: <http://www.w3.org/XML/1998/namespace>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n\nSELECT ?concert_name ?theme (COUNT(?singer_id) AS ?number_of_singers)\nWHERE {\n  ?concert rdf:type :concert ;\n           :concert\\#concert_name ?concert_name ;\n           :concert\\#theme ?theme .\n  OPTIONAL {\n    ?singer_in_concert :singer_in_concert\\#ref-concert_id ?concert ;\n                       :singer_in_concert\\#singer_id ?singer_id .\n  }\n}\nGROUP BY ?concert_name ?theme",
+      "full_graph_file": "spider4sparql/concert_singer.ttl",
+      "execution_success": true,
+      "results": [
+        [
+          "Auditions",
+          "Free choice",
+          "3"
+        ],
+        [
+          "Super bootcamp",
+          "Free choice 2",
+          "2"
+        ],
+        [
+          "Home Visits",
+          "Bleeding Love",
+          "1"
+        ],
+        [
+          "Week 1",
+          "Wide Awake",
+          "1"
+        ],
+        [
+          "Week 1",
+          "Happy Tonight",
+          "2"
+        ],
+        [
+          "Week 2",
+          "Party All Night",
+          "1"
+        ]
+      ],
+      "gold_result": [
+        [
+          "Auditions",
+          "Free choice",
+          "3"
+        ],
+        [
+          "Super bootcamp",
+          "Free choice 2",
+          "2"
+        ],
+        [
+          "Home Visits",
+          "Bleeding Love",
+          "1"
+        ],
+        [
+          "Week 1",
+          "Wide Awake",
+          "1"
+        ],
+        [
+          "Week 1",
+          "Happy Tonight",
+          "2"
+        ],
+        [
+          "Week 2",
+          "Party All Night",
+          "1"
+        ]
+      ],
+      "error": null
+    },
+    "comment": "",
+    "processing_time": 312.15
+  },
+  {
+    "id": 36,
+    "question_index": 35,
+    "model": "qwen2.5-coder:14b",
+    "backend": "ollama",
+    "result": "```sparql\nSELECT ?singer_name (COUNT(?concert) AS ?num_concerts)\nWHERE {\n  ?singer a :singer ;\n           :singer\\#name ?singer_name .\n  ?singer_in_concert a :singer_in_concert ;\n                      :singer_in_concert\\#ref-singer_id ?singer ;\n                      :singer_in_concert\\#ref-concert_id ?concert .\n}\nGROUP BY ?singer_name\n```",
+    "execution_result": {
+      "cleaned_query": "SELECT ?singer_name (COUNT(?concert) AS ?num_concerts)\nWHERE {\n  ?singer a :singer ;\n           :singer\\#name ?singer_name .\n  ?singer_in_concert a :singer_in_concert ;\n                      :singer_in_concert\\#ref-singer_id ?singer ;\n                      :singer_in_concert\\#ref-concert_id ?concert .\n}\nGROUP BY ?singer_name",
+      "resolved_query": "PREFIX : <http://valuenet/ontop/>\nPREFIX doap: <http://usefulinc.com/ns/doap#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX void: <http://rdfs.org/ns/void#>\nPREFIX brick: <https://brickschema.org/schema/Brick#>\nPREFIX csvw: <http://www.w3.org/ns/csvw#>\nPREFIX dc: <http://purl.org/dc/elements/1.1/>\nPREFIX dcam: <http://purl.org/dc/dcam/>\nPREFIX dcat: <http://www.w3.org/ns/dcat#>\nPREFIX dcmitype: <http://purl.org/dc/dcmitype/>\nPREFIX dcterms: <http://purl.org/dc/terms/>\nPREFIX foaf: <http://xmlns.com/foaf/0.1/>\nPREFIX odrl: <http://www.w3.org/ns/odrl/2/>\nPREFIX org: <http://www.w3.org/ns/org#>\nPREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX prof: <http://www.w3.org/ns/dx/prof/>\nPREFIX prov: <http://www.w3.org/ns/prov#>\nPREFIX qb: <http://purl.org/linked-data/cube#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX schema: <https://schema.org/>\nPREFIX sh: <http://www.w3.org/ns/shacl#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX sosa: <http://www.w3.org/ns/sosa/>\nPREFIX ssn: <http://www.w3.org/ns/ssn/>\nPREFIX time: <http://www.w3.org/2006/time#>\nPREFIX vann: <http://purl.org/vocab/vann/>\nPREFIX wgs: <https://www.w3.org/2003/01/geo/wgs84_pos#>\nPREFIX xml: <http://www.w3.org/XML/1998/namespace>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n\nSELECT ?singer_name (COUNT(?concert) AS ?num_concerts)\nWHERE {\n  ?singer a :singer ;\n           :singer\\#name ?singer_name .\n  ?singer_in_concert a :singer_in_concert ;\n                      :singer_in_concert\\#ref-singer_id ?singer ;\n                      :singer_in_concert\\#ref-concert_id ?concert .\n}\nGROUP BY ?singer_name",
+      "full_graph_file": "spider4sparql/concert_singer.ttl",
+      "execution_success": true,
+      "results": [
+        [
+          "Timbaland",
+          "2"
+        ],
+        [
+          "Justin Brown",
+          "3"
+        ],
+        [
+          "Rose White",
+          "1"
+        ],
+        [
+          "John Nizinik",
+          "2"
+        ],
+        [
+          "Tribal King",
+          "2"
+        ]
+      ],
+      "gold_result": [
+        [
+          "Timbaland",
+          "2"
+        ],
+        [
+          "Justin Brown",
+          "3"
+        ],
+        [
+          "Rose White",
+          "1"
+        ],
+        [
+          "John Nizinik",
+          "2"
+        ],
+        [
+          "Tribal King",
+          "2"
+        ]
+      ],
+      "error": null
+    },
+    "comment": "",
+    "processing_time": 159.74
+  },
+  {
+    "id": 37,
+    "question_index": 36,
+    "model": "qwen2.5-coder:14b",
+    "backend": "ollama",
+    "result": "```sparql\nSELECT ?singer_name (COUNT(?concert) AS ?number_of_concerts)\nWHERE {\n  ?singer a :singer ;\n           :singer\\#name ?singer_name .\n  ?singer_in_concert a :singer_in_concert ;\n                      :singer_in_concert\\#ref-singer_id ?singer ;\n                      :singer_in_concert\\#ref-concert_id ?concert .\n}\nGROUP BY ?singer_name\n```",
+    "execution_result": {
+      "cleaned_query": "SELECT ?singer_name (COUNT(?concert) AS ?number_of_concerts)\nWHERE {\n  ?singer a :singer ;\n           :singer\\#name ?singer_name .\n  ?singer_in_concert a :singer_in_concert ;\n                      :singer_in_concert\\#ref-singer_id ?singer ;\n                      :singer_in_concert\\#ref-concert_id ?concert .\n}\nGROUP BY ?singer_name",
+      "resolved_query": "PREFIX : <http://valuenet/ontop/>\nPREFIX doap: <http://usefulinc.com/ns/doap#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX void: <http://rdfs.org/ns/void#>\nPREFIX brick: <https://brickschema.org/schema/Brick#>\nPREFIX csvw: <http://www.w3.org/ns/csvw#>\nPREFIX dc: <http://purl.org/dc/elements/1.1/>\nPREFIX dcam: <http://purl.org/dc/dcam/>\nPREFIX dcat: <http://www.w3.org/ns/dcat#>\nPREFIX dcmitype: <http://purl.org/dc/dcmitype/>\nPREFIX dcterms: <http://purl.org/dc/terms/>\nPREFIX foaf: <http://xmlns.com/foaf/0.1/>\nPREFIX odrl: <http://www.w3.org/ns/odrl/2/>\nPREFIX org: <http://www.w3.org/ns/org#>\nPREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX prof: <http://www.w3.org/ns/dx/prof/>\nPREFIX prov: <http://www.w3.org/ns/prov#>\nPREFIX qb: <http://purl.org/linked-data/cube#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX schema: <https://schema.org/>\nPREFIX sh: <http://www.w3.org/ns/shacl#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX sosa: <http://www.w3.org/ns/sosa/>\nPREFIX ssn: <http://www.w3.org/ns/ssn/>\nPREFIX time: <http://www.w3.org/2006/time#>\nPREFIX vann: <http://purl.org/vocab/vann/>\nPREFIX wgs: <https://www.w3.org/2003/01/geo/wgs84_pos#>\nPREFIX xml: <http://www.w3.org/XML/1998/namespace>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n\nSELECT ?singer_name (COUNT(?concert) AS ?number_of_concerts)\nWHERE {\n  ?singer a :singer ;\n           :singer\\#name ?singer_name .\n  ?singer_in_concert a :singer_in_concert ;\n                      :singer_in_concert\\#ref-singer_id ?singer ;\n                      :singer_in_concert\\#ref-concert_id ?concert .\n}\nGROUP BY ?singer_name",
+      "full_graph_file": "spider4sparql/concert_singer.ttl",
+      "execution_success": true,
+      "results": [
+        [
+          "Timbaland",
+          "2"
+        ],
+        [
+          "Justin Brown",
+          "3"
+        ],
+        [
+          "Rose White",
+          "1"
+        ],
+        [
+          "John Nizinik",
+          "2"
+        ],
+        [
+          "Tribal King",
+          "2"
+        ]
+      ],
+      "gold_result": [
+        [
+          "Timbaland",
+          "2"
+        ],
+        [
+          "Justin Brown",
+          "3"
+        ],
+        [
+          "Rose White",
+          "1"
+        ],
+        [
+          "John Nizinik",
+          "2"
+        ],
+        [
+          "Tribal King",
+          "2"
+        ]
+      ],
+      "error": null
+    },
+    "comment": "",
+    "processing_time": 185.6
+  },
+  {
+    "id": 38,
+    "question_index": 37,
+    "model": "qwen2.5-coder:14b",
+    "backend": "ollama",
+    "result": "```sparql\nSELECT ?singer_name\nWHERE {\n  ?concert :concert\\#year \"2014\" .\n  ?singer_in_concert :singer_in_concert\\#ref-concert_id ?concert .\n  ?singer_in_concert :singer_in_concert\\#ref-singer_id ?singer .\n  ?singer :singer\\#name ?singer_name .\n}\n```",
+    "execution_result": {
+      "cleaned_query": "SELECT ?singer_name\nWHERE {\n  ?concert :concert\\#year \"2014\" .\n  ?singer_in_concert :singer_in_concert\\#ref-concert_id ?concert .\n  ?singer_in_concert :singer_in_concert\\#ref-singer_id ?singer .\n  ?singer :singer\\#name ?singer_name .\n}",
+      "resolved_query": "PREFIX : <http://valuenet/ontop/>\nPREFIX doap: <http://usefulinc.com/ns/doap#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX void: <http://rdfs.org/ns/void#>\nPREFIX brick: <https://brickschema.org/schema/Brick#>\nPREFIX csvw: <http://www.w3.org/ns/csvw#>\nPREFIX dc: <http://purl.org/dc/elements/1.1/>\nPREFIX dcam: <http://purl.org/dc/dcam/>\nPREFIX dcat: <http://www.w3.org/ns/dcat#>\nPREFIX dcmitype: <http://purl.org/dc/dcmitype/>\nPREFIX dcterms: <http://purl.org/dc/terms/>\nPREFIX foaf: <http://xmlns.com/foaf/0.1/>\nPREFIX odrl: <http://www.w3.org/ns/odrl/2/>\nPREFIX org: <http://www.w3.org/ns/org#>\nPREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX prof: <http://www.w3.org/ns/dx/prof/>\nPREFIX prov: <http://www.w3.org/ns/prov#>\nPREFIX qb: <http://purl.org/linked-data/cube#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX schema: <https://schema.org/>\nPREFIX sh: <http://www.w3.org/ns/shacl#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX sosa: <http://www.w3.org/ns/sosa/>\nPREFIX ssn: <http://www.w3.org/ns/ssn/>\nPREFIX time: <http://www.w3.org/2006/time#>\nPREFIX vann: <http://purl.org/vocab/vann/>\nPREFIX wgs: <https://www.w3.org/2003/01/geo/wgs84_pos#>\nPREFIX xml: <http://www.w3.org/XML/1998/namespace>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n\nSELECT ?singer_name\nWHERE {\n  ?concert :concert\\#year \"2014\" .\n  ?singer_in_concert :singer_in_concert\\#ref-concert_id ?concert .\n  ?singer_in_concert :singer_in_concert\\#ref-singer_id ?singer .\n  ?singer :singer\\#name ?singer_name .\n}",
+      "full_graph_file": "spider4sparql/concert_singer.ttl",
+      "execution_success": true,
+      "results": [
+        [
+          "Timbaland"
+        ],
+        [
+          "Justin Brown"
+        ],
+        [
+          "John Nizinik"
+        ],
+        [
+          "Justin Brown"
+        ],
+        [
+          "Tribal King"
+        ],
+        [
+          "Rose White"
+        ]
+      ],
+      "gold_result": [
+        [
+          "Timbaland"
+        ],
+        [
+          "Justin Brown"
+        ],
+        [
+          "Justin Brown"
+        ],
+        [
+          "Rose White"
+        ],
+        [
+          "John Nizinik"
+        ],
+        [
+          "Tribal King"
+        ]
+      ],
+      "error": null
+    },
+    "comment": "",
+    "processing_time": 51.88
+  },
+  {
+    "id": 39,
+    "question_index": 38,
+    "model": "qwen2.5-coder:14b",
+    "backend": "ollama",
+    "result": "```sparql\nSELECT ?singer_name\nWHERE {\n  ?concert :concert\\#year \"2014\" .\n  ?singer_in_concert :singer_in_concert\\#ref-concert_id ?concert .\n  ?singer_in_concert :singer_in_concert\\#ref-singer_id ?singer .\n  ?singer :singer\\#name ?singer_name .\n}\n```",
+    "execution_result": {
+      "cleaned_query": "SELECT ?singer_name\nWHERE {\n  ?concert :concert\\#year \"2014\" .\n  ?singer_in_concert :singer_in_concert\\#ref-concert_id ?concert .\n  ?singer_in_concert :singer_in_concert\\#ref-singer_id ?singer .\n  ?singer :singer\\#name ?singer_name .\n}",
+      "resolved_query": "PREFIX : <http://valuenet/ontop/>\nPREFIX doap: <http://usefulinc.com/ns/doap#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX void: <http://rdfs.org/ns/void#>\nPREFIX brick: <https://brickschema.org/schema/Brick#>\nPREFIX csvw: <http://www.w3.org/ns/csvw#>\nPREFIX dc: <http://purl.org/dc/elements/1.1/>\nPREFIX dcam: <http://purl.org/dc/dcam/>\nPREFIX dcat: <http://www.w3.org/ns/dcat#>\nPREFIX dcmitype: <http://purl.org/dc/dcmitype/>\nPREFIX dcterms: <http://purl.org/dc/terms/>\nPREFIX foaf: <http://xmlns.com/foaf/0.1/>\nPREFIX odrl: <http://www.w3.org/ns/odrl/2/>\nPREFIX org: <http://www.w3.org/ns/org#>\nPREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX prof: <http://www.w3.org/ns/dx/prof/>\nPREFIX prov: <http://www.w3.org/ns/prov#>\nPREFIX qb: <http://purl.org/linked-data/cube#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX schema: <https://schema.org/>\nPREFIX sh: <http://www.w3.org/ns/shacl#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX sosa: <http://www.w3.org/ns/sosa/>\nPREFIX ssn: <http://www.w3.org/ns/ssn/>\nPREFIX time: <http://www.w3.org/2006/time#>\nPREFIX vann: <http://purl.org/vocab/vann/>\nPREFIX wgs: <https://www.w3.org/2003/01/geo/wgs84_pos#>\nPREFIX xml: <http://www.w3.org/XML/1998/namespace>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n\nSELECT ?singer_name\nWHERE {\n  ?concert :concert\\#year \"2014\" .\n  ?singer_in_concert :singer_in_concert\\#ref-concert_id ?concert .\n  ?singer_in_concert :singer_in_concert\\#ref-singer_id ?singer .\n  ?singer :singer\\#name ?singer_name .\n}",
+      "full_graph_file": "spider4sparql/concert_singer.ttl",
+      "execution_success": true,
+      "results": [
+        [
+          "Timbaland"
+        ],
+        [
+          "Justin Brown"
+        ],
+        [
+          "John Nizinik"
+        ],
+        [
+          "Justin Brown"
+        ],
+        [
+          "Tribal King"
+        ],
+        [
+          "Rose White"
+        ]
+      ],
+      "gold_result": [
+        [
+          "Timbaland"
+        ],
+        [
+          "Justin Brown"
+        ],
+        [
+          "Justin Brown"
+        ],
+        [
+          "Rose White"
+        ],
+        [
+          "John Nizinik"
+        ],
+        [
+          "Tribal King"
+        ]
+      ],
+      "error": null
+    },
+    "comment": "",
+    "processing_time": 46.89
+  },
+  {
+    "id": 40,
+    "question_index": 39,
+    "model": "qwen2.5-coder:14b",
+    "backend": "ollama",
+    "result": "```sparql\nSELECT ?name ?country\nWHERE {\n  ?singer rdf:type :singer .\n  ?singer :singer\\#name ?name .\n  ?singer :singer\\#country ?country .\n  ?singer :singer\\#song_name ?song_name .\n  FILTER(CONTAINS(?song_name, \"Hey\"))\n}\n```",
+    "execution_result": {
+      "cleaned_query": "SELECT ?name ?country\nWHERE {\n  ?singer rdf:type :singer .\n  ?singer :singer\\#name ?name .\n  ?singer :singer\\#country ?country .\n  ?singer :singer\\#song_name ?song_name .\n  FILTER(CONTAINS(?song_name, \"Hey\"))\n}",
+      "resolved_query": "PREFIX : <http://valuenet/ontop/>\nPREFIX doap: <http://usefulinc.com/ns/doap#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX void: <http://rdfs.org/ns/void#>\nPREFIX brick: <https://brickschema.org/schema/Brick#>\nPREFIX csvw: <http://www.w3.org/ns/csvw#>\nPREFIX dc: <http://purl.org/dc/elements/1.1/>\nPREFIX dcam: <http://purl.org/dc/dcam/>\nPREFIX dcat: <http://www.w3.org/ns/dcat#>\nPREFIX dcmitype: <http://purl.org/dc/dcmitype/>\nPREFIX dcterms: <http://purl.org/dc/terms/>\nPREFIX foaf: <http://xmlns.com/foaf/0.1/>\nPREFIX odrl: <http://www.w3.org/ns/odrl/2/>\nPREFIX org: <http://www.w3.org/ns/org#>\nPREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX prof: <http://www.w3.org/ns/dx/prof/>\nPREFIX prov: <http://www.w3.org/ns/prov#>\nPREFIX qb: <http://purl.org/linked-data/cube#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX schema: <https://schema.org/>\nPREFIX sh: <http://www.w3.org/ns/shacl#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX sosa: <http://www.w3.org/ns/sosa/>\nPREFIX ssn: <http://www.w3.org/ns/ssn/>\nPREFIX time: <http://www.w3.org/2006/time#>\nPREFIX vann: <http://purl.org/vocab/vann/>\nPREFIX wgs: <https://www.w3.org/2003/01/geo/wgs84_pos#>\nPREFIX xml: <http://www.w3.org/XML/1998/namespace>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n\nSELECT ?name ?country\nWHERE {\n  ?singer rdf:type :singer .\n  ?singer :singer\\#name ?name .\n  ?singer :singer\\#country ?country .\n  ?singer :singer\\#song_name ?song_name .\n  FILTER(CONTAINS(?song_name, \"Hey\"))\n}",
+      "full_graph_file": "spider4sparql/concert_singer.ttl",
+      "execution_success": true,
+      "results": [
+        [
+          "Justin Brown",
+          "France"
+        ]
+      ],
+      "gold_result": [
+        [
+          "Justin Brown",
+          "France"
+        ]
+      ],
+      "error": null
+    },
+    "comment": "",
+    "processing_time": 44.07
+  },
+  {
+    "id": 41,
+    "question_index": 40,
+    "model": "qwen2.5-coder:14b",
+    "backend": "ollama",
+    "result": "```sparql\nSELECT ?name ?country\nWHERE {\n  ?singer rdf:type :singer .\n  ?singer :singer\\#name ?name .\n  ?singer :singer\\#country ?country .\n  ?singer :singer\\#song_name ?song_name .\n  FILTER(CONTAINS(?song_name, \"Hey\"))\n}\n```",
+    "execution_result": {
+      "cleaned_query": "SELECT ?name ?country\nWHERE {\n  ?singer rdf:type :singer .\n  ?singer :singer\\#name ?name .\n  ?singer :singer\\#country ?country .\n  ?singer :singer\\#song_name ?song_name .\n  FILTER(CONTAINS(?song_name, \"Hey\"))\n}",
+      "resolved_query": "PREFIX : <http://valuenet/ontop/>\nPREFIX doap: <http://usefulinc.com/ns/doap#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX void: <http://rdfs.org/ns/void#>\nPREFIX brick: <https://brickschema.org/schema/Brick#>\nPREFIX csvw: <http://www.w3.org/ns/csvw#>\nPREFIX dc: <http://purl.org/dc/elements/1.1/>\nPREFIX dcam: <http://purl.org/dc/dcam/>\nPREFIX dcat: <http://www.w3.org/ns/dcat#>\nPREFIX dcmitype: <http://purl.org/dc/dcmitype/>\nPREFIX dcterms: <http://purl.org/dc/terms/>\nPREFIX foaf: <http://xmlns.com/foaf/0.1/>\nPREFIX odrl: <http://www.w3.org/ns/odrl/2/>\nPREFIX org: <http://www.w3.org/ns/org#>\nPREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX prof: <http://www.w3.org/ns/dx/prof/>\nPREFIX prov: <http://www.w3.org/ns/prov#>\nPREFIX qb: <http://purl.org/linked-data/cube#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX schema: <https://schema.org/>\nPREFIX sh: <http://www.w3.org/ns/shacl#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX sosa: <http://www.w3.org/ns/sosa/>\nPREFIX ssn: <http://www.w3.org/ns/ssn/>\nPREFIX time: <http://www.w3.org/2006/time#>\nPREFIX vann: <http://purl.org/vocab/vann/>\nPREFIX wgs: <https://www.w3.org/2003/01/geo/wgs84_pos#>\nPREFIX xml: <http://www.w3.org/XML/1998/namespace>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n\nSELECT ?name ?country\nWHERE {\n  ?singer rdf:type :singer .\n  ?singer :singer\\#name ?name .\n  ?singer :singer\\#country ?country .\n  ?singer :singer\\#song_name ?song_name .\n  FILTER(CONTAINS(?song_name, \"Hey\"))\n}",
+      "full_graph_file": "spider4sparql/concert_singer.ttl",
+      "execution_success": true,
+      "results": [
+        [
+          "Justin Brown",
+          "France"
+        ]
+      ],
+      "gold_result": [
+        [
+          "Justin Brown",
+          "France"
+        ]
+      ],
+      "error": null
+    },
+    "comment": "",
+    "processing_time": 40.27
+  },
+  {
+    "id": 42,
+    "question_index": 41,
+    "model": "qwen2.5-coder:14b",
+    "backend": "ollama",
+    "result": "```sparql\nSELECT ?stadium_name ?stadium_location\nWHERE {\n  ?stadium rdf:type :stadium ;\n           :stadium\\#name ?stadium_name ;\n           :stadium\\#location ?stadium_location .\n  ?concert1 rdf:type :concert ;\n            :concert\\#ref-stadium_id ?stadium ;\n            :concert\\#year \"2014\" .\n  ?concert2 rdf:type :concert ;\n            :concert\\#ref-stadium_id ?stadium ;\n            :concert\\#year \"2015\" .\n}\n```",
+    "execution_result": {
+      "cleaned_query": "SELECT ?stadium_name ?stadium_location\nWHERE {\n  ?stadium rdf:type :stadium ;\n           :stadium\\#name ?stadium_name ;\n           :stadium\\#location ?stadium_location .\n  ?concert1 rdf:type :concert ;\n            :concert\\#ref-stadium_id ?stadium ;\n            :concert\\#year \"2014\" .\n  ?concert2 rdf:type :concert ;\n            :concert\\#ref-stadium_id ?stadium ;\n            :concert\\#year \"2015\" .\n}",
+      "resolved_query": "PREFIX : <http://valuenet/ontop/>\nPREFIX doap: <http://usefulinc.com/ns/doap#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX void: <http://rdfs.org/ns/void#>\nPREFIX brick: <https://brickschema.org/schema/Brick#>\nPREFIX csvw: <http://www.w3.org/ns/csvw#>\nPREFIX dc: <http://purl.org/dc/elements/1.1/>\nPREFIX dcam: <http://purl.org/dc/dcam/>\nPREFIX dcat: <http://www.w3.org/ns/dcat#>\nPREFIX dcmitype: <http://purl.org/dc/dcmitype/>\nPREFIX dcterms: <http://purl.org/dc/terms/>\nPREFIX foaf: <http://xmlns.com/foaf/0.1/>\nPREFIX odrl: <http://www.w3.org/ns/odrl/2/>\nPREFIX org: <http://www.w3.org/ns/org#>\nPREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX prof: <http://www.w3.org/ns/dx/prof/>\nPREFIX prov: <http://www.w3.org/ns/prov#>\nPREFIX qb: <http://purl.org/linked-data/cube#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX schema: <https://schema.org/>\nPREFIX sh: <http://www.w3.org/ns/shacl#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX sosa: <http://www.w3.org/ns/sosa/>\nPREFIX ssn: <http://www.w3.org/ns/ssn/>\nPREFIX time: <http://www.w3.org/2006/time#>\nPREFIX vann: <http://purl.org/vocab/vann/>\nPREFIX wgs: <https://www.w3.org/2003/01/geo/wgs84_pos#>\nPREFIX xml: <http://www.w3.org/XML/1998/namespace>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n\nSELECT ?stadium_name ?stadium_location\nWHERE {\n  ?stadium rdf:type :stadium ;\n           :stadium\\#name ?stadium_name ;\n           :stadium\\#location ?stadium_location .\n  ?concert1 rdf:type :concert ;\n            :concert\\#ref-stadium_id ?stadium ;\n            :concert\\#year \"2014\" .\n  ?concert2 rdf:type :concert ;\n            :concert\\#ref-stadium_id ?stadium ;\n            :concert\\#year \"2015\" .\n}",
+      "full_graph_file": "spider4sparql/concert_singer.ttl",
+      "execution_success": true,
+      "results": [
+        [
+          "Somerset Park",
+          "Ayr United"
+        ]
+      ],
+      "gold_result": [
+        [
+          "Somerset Park",
+          "Ayr United"
+        ]
+      ],
+      "error": null
+    },
+    "comment": "",
+    "processing_time": 70.26
+  },
+  {
+    "id": 43,
+    "question_index": 42,
+    "model": "qwen2.5-coder:14b",
+    "backend": "ollama",
+    "result": "```sparql\nSELECT ?stadium_name ?stadium_location\nWHERE {\n  ?stadium rdf:type :stadium ;\n           :stadium\\#name ?stadium_name ;\n           :stadium\\#location ?stadium_location .\n  ?concert1 rdf:type :concert ;\n            :concert\\#year \"2014\" ;\n            :concert\\#ref-stadium_id ?stadium .\n  ?concert2 rdf:type :concert ;\n            :concert\\#year \"2015\" ;\n            :concert\\#ref-stadium_id ?stadium .\n}\n```",
+    "execution_result": {
+      "cleaned_query": "SELECT ?stadium_name ?stadium_location\nWHERE {\n  ?stadium rdf:type :stadium ;\n           :stadium\\#name ?stadium_name ;\n           :stadium\\#location ?stadium_location .\n  ?concert1 rdf:type :concert ;\n            :concert\\#year \"2014\" ;\n            :concert\\#ref-stadium_id ?stadium .\n  ?concert2 rdf:type :concert ;\n            :concert\\#year \"2015\" ;\n            :concert\\#ref-stadium_id ?stadium .\n}",
+      "resolved_query": "PREFIX : <http://valuenet/ontop/>\nPREFIX doap: <http://usefulinc.com/ns/doap#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX void: <http://rdfs.org/ns/void#>\nPREFIX brick: <https://brickschema.org/schema/Brick#>\nPREFIX csvw: <http://www.w3.org/ns/csvw#>\nPREFIX dc: <http://purl.org/dc/elements/1.1/>\nPREFIX dcam: <http://purl.org/dc/dcam/>\nPREFIX dcat: <http://www.w3.org/ns/dcat#>\nPREFIX dcmitype: <http://purl.org/dc/dcmitype/>\nPREFIX dcterms: <http://purl.org/dc/terms/>\nPREFIX foaf: <http://xmlns.com/foaf/0.1/>\nPREFIX odrl: <http://www.w3.org/ns/odrl/2/>\nPREFIX org: <http://www.w3.org/ns/org#>\nPREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX prof: <http://www.w3.org/ns/dx/prof/>\nPREFIX prov: <http://www.w3.org/ns/prov#>\nPREFIX qb: <http://purl.org/linked-data/cube#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX schema: <https://schema.org/>\nPREFIX sh: <http://www.w3.org/ns/shacl#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX sosa: <http://www.w3.org/ns/sosa/>\nPREFIX ssn: <http://www.w3.org/ns/ssn/>\nPREFIX time: <http://www.w3.org/2006/time#>\nPREFIX vann: <http://purl.org/vocab/vann/>\nPREFIX wgs: <https://www.w3.org/2003/01/geo/wgs84_pos#>\nPREFIX xml: <http://www.w3.org/XML/1998/namespace>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n\nSELECT ?stadium_name ?stadium_location\nWHERE {\n  ?stadium rdf:type :stadium ;\n           :stadium\\#name ?stadium_name ;\n           :stadium\\#location ?stadium_location .\n  ?concert1 rdf:type :concert ;\n            :concert\\#year \"2014\" ;\n            :concert\\#ref-stadium_id ?stadium .\n  ?concert2 rdf:type :concert ;\n            :concert\\#year \"2015\" ;\n            :concert\\#ref-stadium_id ?stadium .\n}",
+      "full_graph_file": "spider4sparql/concert_singer.ttl",
+      "execution_success": true,
+      "results": [
+        [
+          "Somerset Park",
+          "Ayr United"
+        ]
+      ],
+      "gold_result": [
+        [
+          "Somerset Park",
+          "Ayr United"
+        ]
+      ],
+      "error": null
+    },
+    "comment": "",
+    "processing_time": 62.66
+  },
+  {
+    "id": 44,
+    "question_index": 43,
+    "model": "qwen2.5-coder:14b",
+    "backend": "ollama",
+    "result": "```sparql\nSELECT (COUNT(?concert) AS ?number_of_concerts)\nWHERE {\n  ?stadium rdf:type :stadium ;\n           :stadium\\#capacity ?capacity .\n  ?concert rdf:type :concert ;\n           :concert\\#ref-stadium_id ?stadium .\n  FILTER(?capacity = (SELECT MAX(?c) FROM { ?s :stadium\\#capacity ?c }))\n}\n```",
+    "execution_result": {
+      "cleaned_query": "SELECT (COUNT(?concert) AS ?number_of_concerts)\nWHERE {\n  ?stadium rdf:type :stadium ;\n           :stadium\\#capacity ?capacity .\n  ?concert rdf:type :concert ;\n           :concert\\#ref-stadium_id ?stadium .\n  FILTER(?capacity = (SELECT MAX(?c) FROM { ?s :stadium\\#capacity ?c }))\n}",
+      "resolved_query": "PREFIX : <http://valuenet/ontop/>\nPREFIX doap: <http://usefulinc.com/ns/doap#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX void: <http://rdfs.org/ns/void#>\nPREFIX brick: <https://brickschema.org/schema/Brick#>\nPREFIX csvw: <http://www.w3.org/ns/csvw#>\nPREFIX dc: <http://purl.org/dc/elements/1.1/>\nPREFIX dcam: <http://purl.org/dc/dcam/>\nPREFIX dcat: <http://www.w3.org/ns/dcat#>\nPREFIX dcmitype: <http://purl.org/dc/dcmitype/>\nPREFIX dcterms: <http://purl.org/dc/terms/>\nPREFIX foaf: <http://xmlns.com/foaf/0.1/>\nPREFIX odrl: <http://www.w3.org/ns/odrl/2/>\nPREFIX org: <http://www.w3.org/ns/org#>\nPREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX prof: <http://www.w3.org/ns/dx/prof/>\nPREFIX prov: <http://www.w3.org/ns/prov#>\nPREFIX qb: <http://purl.org/linked-data/cube#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX schema: <https://schema.org/>\nPREFIX sh: <http://www.w3.org/ns/shacl#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX sosa: <http://www.w3.org/ns/sosa/>\nPREFIX ssn: <http://www.w3.org/ns/ssn/>\nPREFIX time: <http://www.w3.org/2006/time#>\nPREFIX vann: <http://purl.org/vocab/vann/>\nPREFIX wgs: <https://www.w3.org/2003/01/geo/wgs84_pos#>\nPREFIX xml: <http://www.w3.org/XML/1998/namespace>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n\nSELECT (COUNT(?concert) AS ?number_of_concerts)\nWHERE {\n  ?stadium rdf:type :stadium ;\n           :stadium\\#capacity ?capacity .\n  ?concert rdf:type :concert ;\n           :concert\\#ref-stadium_id ?stadium .\n  FILTER(?capacity = (SELECT MAX(?c) FROM { ?s :stadium\\#capacity ?c }))\n}",
+      "full_graph_file": "spider4sparql/concert_singer.ttl",
+      "execution_success": false,
+      "results": [],
+      "gold_result": [
+        [
+          "6"
+        ]
+      ],
+      "error": "Expected SelectQuery, found 'FILTER'  (at char 1567), (line:38, col:3)"
+    },
+    "comment": "syn_subq, syn_sql",
+    "processing_time": 42.92
+  },
+  {
+    "id": 45,
+    "question_index": 44,
+    "model": "qwen2.5-coder:14b",
+    "backend": "ollama",
+    "result": "```sparql\nSELECT (COUNT(?concert) AS ?number_of_concerts)\nWHERE {\n  ?stadium rdf:type :stadium .\n  ?stadium :stadium\\#capacity ?capacity .\n  ?concert :concert\\#ref-stadium_id ?stadium .\n  FILTER NOT EXISTS {\n    ?otherStadium :stadium\\#capacity ?otherCapacity .\n    FILTER(?otherCapacity > ?capacity)\n  }\n}\n```",
+    "execution_result": {
+      "cleaned_query": "SELECT (COUNT(?concert) AS ?number_of_concerts)\nWHERE {\n  ?stadium rdf:type :stadium .\n  ?stadium :stadium\\#capacity ?capacity .\n  ?concert :concert\\#ref-stadium_id ?stadium .\n  FILTER NOT EXISTS {\n    ?otherStadium :stadium\\#capacity ?otherCapacity .\n    FILTER(?otherCapacity > ?capacity)\n  }\n}",
+      "resolved_query": "PREFIX : <http://valuenet/ontop/>\nPREFIX doap: <http://usefulinc.com/ns/doap#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX void: <http://rdfs.org/ns/void#>\nPREFIX brick: <https://brickschema.org/schema/Brick#>\nPREFIX csvw: <http://www.w3.org/ns/csvw#>\nPREFIX dc: <http://purl.org/dc/elements/1.1/>\nPREFIX dcam: <http://purl.org/dc/dcam/>\nPREFIX dcat: <http://www.w3.org/ns/dcat#>\nPREFIX dcmitype: <http://purl.org/dc/dcmitype/>\nPREFIX dcterms: <http://purl.org/dc/terms/>\nPREFIX foaf: <http://xmlns.com/foaf/0.1/>\nPREFIX odrl: <http://www.w3.org/ns/odrl/2/>\nPREFIX org: <http://www.w3.org/ns/org#>\nPREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX prof: <http://www.w3.org/ns/dx/prof/>\nPREFIX prov: <http://www.w3.org/ns/prov#>\nPREFIX qb: <http://purl.org/linked-data/cube#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX schema: <https://schema.org/>\nPREFIX sh: <http://www.w3.org/ns/shacl#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX sosa: <http://www.w3.org/ns/sosa/>\nPREFIX ssn: <http://www.w3.org/ns/ssn/>\nPREFIX time: <http://www.w3.org/2006/time#>\nPREFIX vann: <http://purl.org/vocab/vann/>\nPREFIX wgs: <https://www.w3.org/2003/01/geo/wgs84_pos#>\nPREFIX xml: <http://www.w3.org/XML/1998/namespace>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n\nSELECT (COUNT(?concert) AS ?number_of_concerts)\nWHERE {\n  ?stadium rdf:type :stadium .\n  ?stadium :stadium\\#capacity ?capacity .\n  ?concert :concert\\#ref-stadium_id ?stadium .\n  FILTER NOT EXISTS {\n    ?otherStadium :stadium\\#capacity ?otherCapacity .\n    FILTER(?otherCapacity > ?capacity)\n  }\n}",
+      "full_graph_file": "spider4sparql/concert_singer.ttl",
+      "execution_success": true,
+      "results": [
+        [
+          "0"
+        ]
+      ],
+      "gold_result": [
+        [
+          "6"
+        ]
+      ],
+      "error": null
+    },
+    "comment": "giusta",
+    "processing_time": 45.13
+  }
+]

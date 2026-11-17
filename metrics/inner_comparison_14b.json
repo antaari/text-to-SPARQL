@@ -1,0 +1,329 @@
+[
+  {
+    "method1": {
+      "name": "zs4_pp3_qwen14b_v2",
+      "model": "qwen2.5-coder:14b",
+      "strategy": "zero_shot_v04",
+      "total_queries": 45
+    },
+    "method2": {
+      "name": "fs7_qwen14b",
+      "model": "qwen2.5-coder:14b",
+      "strategy": "few_shots_v07",
+      "total_queries": 45
+    },
+    "paired_queries": 45,
+    "metrics": {
+      "correct_queries": {
+        "name": "Correct Queries (Accuracy / Exact Match)",
+        "level": "GENERALE",
+        "stats": {
+          "n_pairs": 45,
+          "a": 32,
+          "b": 2,
+          "c": 3,
+          "d": 8,
+          "rate1": 0.7555555555555555,
+          "rate2": 0.7777777777777778,
+          "diff_rate": -0.022222222222222254,
+          "discordant_total": 5,
+          "odds_ratio": 0.6666666666666666,
+          "p_value": 1.0,
+          "significance": "n.s."
+        },
+        "discordant_m1_wins": [
+          7,
+          42
+        ],
+        "discordant_m2_wins": [
+          12,
+          13,
+          23
+        ]
+      },
+      "execution_success": {
+        "name": "Execution Success (Syntactic & Runtime Validity)",
+        "level": "DETTAGLIO",
+        "stats": {
+          "n_pairs": 45,
+          "a": 41,
+          "b": 1,
+          "c": 2,
+          "d": 1,
+          "rate1": 0.9333333333333333,
+          "rate2": 0.9555555555555556,
+          "diff_rate": -0.022222222222222254,
+          "discordant_total": 3,
+          "odds_ratio": 0.5,
+          "p_value": 1.0,
+          "significance": "n.s."
+        },
+        "discordant_m1_wins": [
+          25
+        ],
+        "discordant_m2_wins": [
+          12,
+          13
+        ]
+      },
+      "result_mismatch": {
+        "name": "Result Mismatch (Valid Execution with Mismatched Tuples)",
+        "level": "DETTAGLIO",
+        "stats": {
+          "n_pairs": 45,
+          "a": 6,
+          "b": 2,
+          "c": 2,
+          "d": 35,
+          "rate1": 0.17777777777777778,
+          "rate2": 0.17777777777777778,
+          "diff_rate": 0.0,
+          "discordant_total": 4,
+          "odds_ratio": 1.0,
+          "p_value": 1.0,
+          "significance": "n.s."
+        },
+        "discordant_m1_wins": [
+          23,
+          25
+        ],
+        "discordant_m2_wins": [
+          7,
+          42
+        ]
+      }
+    }
+  },
+  {
+    "method1": {
+      "name": "zs4_pp3_qwen14b_v2",
+      "model": "qwen2.5-coder:14b",
+      "strategy": "zero_shot_v04",
+      "total_queries": 45
+    },
+    "method2": {
+      "name": "cot13_pp3_qwen14b_v2",
+      "model": "qwen2.5-coder:14b",
+      "strategy": "cot_v13",
+      "total_queries": 45
+    },
+    "paired_queries": 45,
+    "metrics": {
+      "correct_queries": {
+        "name": "Correct Queries (Accuracy / Exact Match)",
+        "level": "GENERALE",
+        "stats": {
+          "n_pairs": 45,
+          "a": 22,
+          "b": 12,
+          "c": 4,
+          "d": 7,
+          "rate1": 0.7555555555555555,
+          "rate2": 0.5777777777777777,
+          "diff_rate": 0.1777777777777778,
+          "discordant_total": 16,
+          "odds_ratio": 3.0,
+          "p_value": 0.076812744140625,
+          "significance": "n.s."
+        },
+        "discordant_m1_wins": [
+          7,
+          9,
+          10,
+          22,
+          27,
+          31,
+          32,
+          36,
+          37,
+          38,
+          41,
+          42
+        ],
+        "discordant_m2_wins": [
+          6,
+          12,
+          13,
+          23
+        ]
+      },
+      "execution_success": {
+        "name": "Execution Success (Syntactic & Runtime Validity)",
+        "level": "DETTAGLIO",
+        "stats": {
+          "n_pairs": 45,
+          "a": 36,
+          "b": 6,
+          "c": 3,
+          "d": 0,
+          "rate1": 0.9333333333333333,
+          "rate2": 0.8666666666666667,
+          "diff_rate": 0.06666666666666665,
+          "discordant_total": 9,
+          "odds_ratio": 2.0,
+          "p_value": 0.5078125,
+          "significance": "n.s."
+        },
+        "discordant_m1_wins": [
+          10,
+          30,
+          31,
+          32,
+          41,
+          42
+        ],
+        "discordant_m2_wins": [
+          12,
+          13,
+          43
+        ]
+      },
+      "result_mismatch": {
+        "name": "Result Mismatch (Valid Execution with Mismatched Tuples)",
+        "level": "DETTAGLIO",
+        "stats": {
+          "n_pairs": 45,
+          "a": 5,
+          "b": 3,
+          "c": 8,
+          "d": 29,
+          "rate1": 0.17777777777777778,
+          "rate2": 0.28888888888888886,
+          "diff_rate": -0.11111111111111108,
+          "discordant_total": 11,
+          "odds_ratio": 0.375,
+          "p_value": 0.2265625,
+          "significance": "n.s."
+        },
+        "discordant_m1_wins": [
+          6,
+          23,
+          30
+        ],
+        "discordant_m2_wins": [
+          7,
+          9,
+          22,
+          27,
+          36,
+          37,
+          38,
+          43
+        ]
+      }
+    }
+  },
+  {
+    "method1": {
+      "name": "cot13_pp3_qwen14b_v2",
+      "model": "qwen2.5-coder:14b",
+      "strategy": "cot_v13",
+      "total_queries": 45
+    },
+    "method2": {
+      "name": "fs7_qwen14b",
+      "model": "qwen2.5-coder:14b",
+      "strategy": "few_shots_v07",
+      "total_queries": 45
+    },
+    "paired_queries": 45,
+    "metrics": {
+      "correct_queries": {
+        "name": "Correct Queries (Accuracy / Exact Match)",
+        "level": "GENERALE",
+        "stats": {
+          "n_pairs": 45,
+          "a": 25,
+          "b": 1,
+          "c": 10,
+          "d": 9,
+          "rate1": 0.5777777777777777,
+          "rate2": 0.7777777777777778,
+          "diff_rate": -0.20000000000000007,
+          "discordant_total": 11,
+          "odds_ratio": 0.1,
+          "p_value": 0.01171875,
+          "significance": "*"
+        },
+        "discordant_m1_wins": [
+          6
+        ],
+        "discordant_m2_wins": [
+          9,
+          10,
+          22,
+          27,
+          31,
+          32,
+          36,
+          37,
+          38,
+          41
+        ]
+      },
+      "execution_success": {
+        "name": "Execution Success (Syntactic & Runtime Validity)",
+        "level": "DETTAGLIO",
+        "stats": {
+          "n_pairs": 45,
+          "a": 37,
+          "b": 2,
+          "c": 6,
+          "d": 0,
+          "rate1": 0.8666666666666667,
+          "rate2": 0.9555555555555556,
+          "diff_rate": -0.0888888888888889,
+          "discordant_total": 8,
+          "odds_ratio": 0.3333333333333333,
+          "p_value": 0.2890625,
+          "significance": "n.s."
+        },
+        "discordant_m1_wins": [
+          25,
+          43
+        ],
+        "discordant_m2_wins": [
+          10,
+          30,
+          31,
+          32,
+          41,
+          42
+        ]
+      },
+      "result_mismatch": {
+        "name": "Result Mismatch (Valid Execution with Mismatched Tuples)",
+        "level": "DETTAGLIO",
+        "stats": {
+          "n_pairs": 45,
+          "a": 5,
+          "b": 8,
+          "c": 3,
+          "d": 29,
+          "rate1": 0.28888888888888886,
+          "rate2": 0.17777777777777778,
+          "diff_rate": 0.11111111111111108,
+          "discordant_total": 11,
+          "odds_ratio": 2.6666666666666665,
+          "p_value": 0.2265625,
+          "significance": "n.s."
+        },
+        "discordant_m1_wins": [
+          9,
+          22,
+          25,
+          27,
+          36,
+          37,
+          38,
+          43
+        ],
+        "discordant_m2_wins": [
+          6,
+          30,
+          42
+        ]
+      }
+    }
+  }
+]

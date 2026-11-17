@@ -1,0 +1,354 @@
+[
+  {
+    "method1": {
+      "name": "zs4_pp3_qwen14b_v2",
+      "model": "qwen2.5-coder:14b",
+      "strategy": "zero_shot_v04",
+      "total_queries": 45
+    },
+    "method2": {
+      "name": "zs4_pp3_qwen7b",
+      "model": "qwen2.5-coder:7b",
+      "strategy": "zero_shot_v04",
+      "total_queries": 45
+    },
+    "paired_queries": 45,
+    "metrics": {
+      "correct_queries": {
+        "name": "Correct Queries (Accuracy / Exact Match)",
+        "level": "GENERALE",
+        "stats": {
+          "n_pairs": 45,
+          "a": 21,
+          "b": 13,
+          "c": 1,
+          "d": 10,
+          "rate1": 0.7555555555555555,
+          "rate2": 0.4888888888888889,
+          "diff_rate": 0.26666666666666666,
+          "discordant_total": 14,
+          "odds_ratio": 13.0,
+          "p_value": 0.0018310546875,
+          "significance": "**"
+        },
+        "discordant_m1_wins": [
+          4,
+          5,
+          7,
+          18,
+          19,
+          22,
+          28,
+          29,
+          31,
+          32,
+          34,
+          35,
+          36
+        ],
+        "discordant_m2_wins": [
+          30
+        ]
+      },
+      "execution_success": {
+        "name": "Execution Success (Syntactic & Runtime Validity)",
+        "level": "DETTAGLIO",
+        "stats": {
+          "n_pairs": 45,
+          "a": 33,
+          "b": 9,
+          "c": 0,
+          "d": 3,
+          "rate1": 0.9333333333333333,
+          "rate2": 0.7333333333333333,
+          "diff_rate": 0.20000000000000007,
+          "discordant_total": 9,
+          "odds_ratio": Infinity,
+          "p_value": 0.00390625,
+          "significance": "**"
+        },
+        "discordant_m1_wins": [
+          4,
+          5,
+          6,
+          7,
+          16,
+          18,
+          19,
+          23,
+          44
+        ],
+        "discordant_m2_wins": []
+      },
+      "result_mismatch": {
+        "name": "Result Mismatch (Valid Execution with Mismatched Tuples)",
+        "level": "DETTAGLIO",
+        "stats": {
+          "n_pairs": 45,
+          "a": 3,
+          "b": 5,
+          "c": 8,
+          "d": 29,
+          "rate1": 0.17777777777777778,
+          "rate2": 0.24444444444444444,
+          "diff_rate": -0.06666666666666665,
+          "discordant_total": 13,
+          "odds_ratio": 0.625,
+          "p_value": 0.5810546875,
+          "significance": "n.s."
+        },
+        "discordant_m1_wins": [
+          6,
+          16,
+          23,
+          30,
+          44
+        ],
+        "discordant_m2_wins": [
+          22,
+          28,
+          29,
+          31,
+          32,
+          34,
+          35,
+          36
+        ]
+      }
+    }
+  },
+  {
+    "method1": {
+      "name": "fs7_qwen14b",
+      "model": "qwen2.5-coder:14b",
+      "strategy": "few_shots_v07",
+      "total_queries": 45
+    },
+    "method2": {
+      "name": "fs7_qwen7b",
+      "model": "qwen2.5-coder:7b",
+      "strategy": "few_shots_v07",
+      "total_queries": 45
+    },
+    "paired_queries": 45,
+    "metrics": {
+      "correct_queries": {
+        "name": "Correct Queries (Accuracy / Exact Match)",
+        "level": "GENERALE",
+        "stats": {
+          "n_pairs": 45,
+          "a": 26,
+          "b": 9,
+          "c": 1,
+          "d": 9,
+          "rate1": 0.7777777777777778,
+          "rate2": 0.6,
+          "diff_rate": 0.1777777777777778,
+          "discordant_total": 10,
+          "odds_ratio": 9.0,
+          "p_value": 0.021484375,
+          "significance": "*"
+        },
+        "discordant_m1_wins": [
+          12,
+          13,
+          18,
+          19,
+          20,
+          21,
+          23,
+          26,
+          27
+        ],
+        "discordant_m2_wins": [
+          42
+        ]
+      },
+      "execution_success": {
+        "name": "Execution Success (Syntactic & Runtime Validity)",
+        "level": "DETTAGLIO",
+        "stats": {
+          "n_pairs": 45,
+          "a": 34,
+          "b": 9,
+          "c": 1,
+          "d": 1,
+          "rate1": 0.9555555555555556,
+          "rate2": 0.7777777777777778,
+          "diff_rate": 0.1777777777777778,
+          "discordant_total": 10,
+          "odds_ratio": 9.0,
+          "p_value": 0.021484375,
+          "significance": "*"
+        },
+        "discordant_m1_wins": [
+          6,
+          7,
+          12,
+          13,
+          18,
+          19,
+          20,
+          21,
+          44
+        ],
+        "discordant_m2_wins": [
+          25
+        ]
+      },
+      "result_mismatch": {
+        "name": "Result Mismatch (Valid Execution with Mismatched Tuples)",
+        "level": "DETTAGLIO",
+        "stats": {
+          "n_pairs": 45,
+          "a": 4,
+          "b": 4,
+          "c": 4,
+          "d": 33,
+          "rate1": 0.17777777777777778,
+          "rate2": 0.17777777777777778,
+          "diff_rate": 0.0,
+          "discordant_total": 8,
+          "odds_ratio": 1.0,
+          "p_value": 1.0,
+          "significance": "n.s."
+        },
+        "discordant_m1_wins": [
+          6,
+          7,
+          42,
+          44
+        ],
+        "discordant_m2_wins": [
+          23,
+          25,
+          26,
+          27
+        ]
+      }
+    }
+  },
+  {
+    "method1": {
+      "name": "cot13_pp3_qwen14b_v2",
+      "model": "qwen2.5-coder:14b",
+      "strategy": "cot_v13",
+      "total_queries": 45
+    },
+    "method2": {
+      "name": "cot13_pp3_qwen7b",
+      "model": "qwen2.5-coder:7b",
+      "strategy": "cot_v13",
+      "total_queries": 45
+    },
+    "paired_queries": 45,
+    "metrics": {
+      "correct_queries": {
+        "name": "Correct Queries (Accuracy / Exact Match)",
+        "level": "GENERALE",
+        "stats": {
+          "n_pairs": 45,
+          "a": 20,
+          "b": 6,
+          "c": 7,
+          "d": 12,
+          "rate1": 0.5777777777777777,
+          "rate2": 0.6,
+          "diff_rate": -0.022222222222222254,
+          "discordant_total": 13,
+          "odds_ratio": 0.8571428571428571,
+          "p_value": 1.0,
+          "significance": "n.s."
+        },
+        "discordant_m1_wins": [
+          4,
+          6,
+          8,
+          12,
+          13,
+          26
+        ],
+        "discordant_m2_wins": [
+          10,
+          22,
+          31,
+          32,
+          36,
+          38,
+          41
+        ]
+      },
+      "execution_success": {
+        "name": "Execution Success (Syntactic & Runtime Validity)",
+        "level": "DETTAGLIO",
+        "stats": {
+          "n_pairs": 45,
+          "a": 28,
+          "b": 11,
+          "c": 5,
+          "d": 1,
+          "rate1": 0.8666666666666667,
+          "rate2": 0.7333333333333333,
+          "diff_rate": 0.13333333333333341,
+          "discordant_total": 16,
+          "odds_ratio": 2.2,
+          "p_value": 0.210113525390625,
+          "significance": "n.s."
+        },
+        "discordant_m1_wins": [
+          6,
+          7,
+          8,
+          9,
+          12,
+          13,
+          25,
+          26,
+          27,
+          43,
+          44
+        ],
+        "discordant_m2_wins": [
+          10,
+          30,
+          31,
+          32,
+          41
+        ]
+      },
+      "result_mismatch": {
+        "name": "Result Mismatch (Valid Execution with Mismatched Tuples)",
+        "level": "DETTAGLIO",
+        "stats": {
+          "n_pairs": 45,
+          "a": 4,
+          "b": 9,
+          "c": 2,
+          "d": 30,
+          "rate1": 0.28888888888888886,
+          "rate2": 0.13333333333333333,
+          "diff_rate": 0.15555555555555553,
+          "discordant_total": 11,
+          "odds_ratio": 4.5,
+          "p_value": 0.0654296875,
+          "significance": "n.s."
+        },
+        "discordant_m1_wins": [
+          7,
+          9,
+          22,
+          25,
+          27,
+          36,
+          38,
+          43,
+          44
+        ],
+        "discordant_m2_wins": [
+          4,
+          30
+        ]
+      }
+    }
+  }
+]
